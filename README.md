@@ -23,7 +23,7 @@ Bootsrap 4
 Versionado 📌
 Change Significance
 
-Autores ✒️
+Autores ✒️ br/
 Jose Acuña Arrieta
 Alexis Eliz
 
