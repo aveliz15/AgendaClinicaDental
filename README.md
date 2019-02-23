@@ -22,7 +22,7 @@ Sql Server 2016
 
 Bootsrap 4
 
-.NetFramework
+.NetFramework 4.5
 
 Versionado 📌
 
@@ -32,5 +32,5 @@ Autores ✒️
 
 Jose Acuña Arrieta
 
-Alexis Eliz
+Alexis Véliz Arcia
 
