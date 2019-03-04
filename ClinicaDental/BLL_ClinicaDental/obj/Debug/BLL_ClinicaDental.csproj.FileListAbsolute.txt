@@ -1,0 +1,5 @@
+C:\Users\Chiky\Desktop\Github\ClinicaDental\BLL_ClinicaDental\bin\Debug\BLL_ClinicaDental.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\BLL_ClinicaDental\bin\Debug\BLL_ClinicaDental.pdb
+C:\Users\Chiky\Desktop\Github\ClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_ClinicaDental.csprojResolveAssemblyReference.cache
+C:\Users\Chiky\Desktop\Github\ClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_ClinicaDental.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_ClinicaDental.pdb
