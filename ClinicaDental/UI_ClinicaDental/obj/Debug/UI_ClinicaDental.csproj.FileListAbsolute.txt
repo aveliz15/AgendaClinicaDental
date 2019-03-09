@@ -25,9 +25,17 @@ C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Scrip
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Newtonsoft.Json.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Owin.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Common.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Interfaces.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.OrmLite.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.OrmLite.SqlServer.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Text.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\System.Web.Optimization.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\System.Web.Providers.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\WebGrease.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Common.xml
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Interfaces.xml
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\ServiceStack.Text.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\System.Web.Optimization.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Antlr3.Runtime.pdb
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Newtonsoft.Json.xml
@@ -61,6 +69,5 @@ C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Ow
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.csprojResolveAssemblyReference.cache
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.pdb

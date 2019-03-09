@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Administrar cuenta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="UI_ClinicaDental.Account.Manage" %>
+﻿<%@ Page Title="Administrar cuenta" Language="C#" MasterPageFile="~/Dentista.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="UI_ClinicaDental.Account.Manage" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 

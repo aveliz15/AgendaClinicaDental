@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_ClinicaDental", "BLL_ClinicaDental\BLL_ClinicaDental.csproj", "{35770C78-8BA6-4E60-9FB9-00B0105BB5BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL_ClinicaDental", "DLL_ClinicaDental\DLL_ClinicaDental.csproj", "{F7531842-2C40-478A-8BD0-D4A698367555}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_ClinicaDental", "DLL_ClinicaDental\DAL_ClinicaDental.csproj", "{F7531842-2C40-478A-8BD0-D4A698367555}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATOS_ClinicaDental", "DATOS_ClinicaDental\DATOS_ClinicaDental.csproj", "{F83C3FF9-E20A-4C5D-AEBE-BA3622CF23A4}"
 EndProject

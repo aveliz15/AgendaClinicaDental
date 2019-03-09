@@ -30,6 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\packages\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\packages\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.71\lib\net35\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.71\lib\net35\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,8 +54,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Interfaces\ICita.cs" />
+    <Compile Include="Interfaces\IDiagnostico.cs" />
+    <Compile Include="Interfaces\IDiente.cs" />
+    <Compile Include="Interfaces\IPaciente.cs" />
+    <Compile Include="Interfaces\IReporte.cs" />
+    <Compile Include="Interfaces\IRol.cs" />
+    <Compile Include="Interfaces\ITipo_Cita.cs" />
+    <Compile Include="Interfaces\ITipo_Ontograma.cs" />
+    <Compile Include="Interfaces\ITipo_Reporte.cs" />
+    <Compile Include="Interfaces\IUsuario.cs" />
+    <Compile Include="Metodos\MCita.cs" />
+    <Compile Include="Metodos\MDiagnostico.cs" />
+    <Compile Include="Metodos\MDiente.cs" />
+    <Compile Include="Metodos\MPaciente.cs" />
+    <Compile Include="Metodos\MReporte.cs" />
+    <Compile Include="Metodos\MRol.cs" />
+    <Compile Include="Metodos\MTipo_Cita.cs" />
+    <Compile Include="Metodos\MTipo_Ontograma.cs" />
+    <Compile Include="Metodos\MTipo_Reporte.cs" />
+    <Compile Include="Metodos\MUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATOS_ClinicaDental\DATOS_ClinicaDental.csproj">
+      <Project>{f83c3ff9-e20a-4c5d-aebe-ba3622cf23a4}</Project>
+      <Name>DATOS_ClinicaDental</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL_ClinicaDental\DAL_ClinicaDental.csproj">
+      <Project>{f7531842-2c40-478a-8bd0-d4a698367555}</Project>
+      <Name>DAL_ClinicaDental</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

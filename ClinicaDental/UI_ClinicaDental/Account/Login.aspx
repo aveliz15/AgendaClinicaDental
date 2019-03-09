@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Iniciar sesión" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="UI_ClinicaDental.Account.Login" Async="true" %>
+﻿<%@ Page Title="Iniciar sesión" Language="C#" MasterPageFile="~/Dentista.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="UI_ClinicaDental.Account.Login" Async="true" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
