@@ -164,6 +164,8 @@
   <ItemGroup>
     <Content Include="CambiarClave.aspx" />
     <Content Include="Citas.aspx" />
+    <Content Include="Content\Estilos.css" />
+    <Content Include="Imagenes\fondo.jpg" />
     <Content Include="IndexSecretaria.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="Login.aspx" />
