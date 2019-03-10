@@ -163,6 +163,7 @@
     <Content Include="Citas.aspx" />
     <Content Include="IndexSecretaria.aspx" />
     <Content Include="InsertarUsuario.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Reportes.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -175,7 +176,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="LoginDentista.aspx" />
     <Content Include="LoginUsuario.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -292,6 +292,13 @@
     <Compile Include="InsertarUsuario.aspx.designer.cs">
       <DependentUpon>InsertarUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -331,13 +338,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="LoginDentista.aspx.cs">
-      <DependentUpon>LoginDentista.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginDentista.aspx.designer.cs">
-      <DependentUpon>LoginDentista.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginDentista.Master.cs">
       <DependentUpon>LoginDentista.Master</DependentUpon>
