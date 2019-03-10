@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -160,10 +162,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CambiarClave.aspx" />
     <Content Include="Citas.aspx" />
     <Content Include="IndexSecretaria.aspx" />
     <Content Include="InsertarUsuario.aspx" />
+<<<<<<< HEAD
     <Content Include="Login.aspx" />
+=======
+    <Content Include="ModificarUsuario.aspx" />
+>>>>>>> 629a177258a4b122e8ea89d950ccb46f7e170b16
     <Content Include="Reportes.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -270,6 +277,13 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="CambiarClave.aspx.cs">
+      <DependentUpon>CambiarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CambiarClave.aspx.designer.cs">
+      <DependentUpon>CambiarClave.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Citas.aspx.cs">
       <DependentUpon>Citas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -292,12 +306,21 @@
     <Compile Include="InsertarUsuario.aspx.designer.cs">
       <DependentUpon>InsertarUsuario.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+=======
+    <Compile Include="ModificarUsuario.aspx.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuario.aspx.designer.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+>>>>>>> 629a177258a4b122e8ea89d950ccb46f7e170b16
     </Compile>
     <Compile Include="Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
