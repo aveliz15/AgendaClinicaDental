@@ -161,6 +161,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Citas.aspx" />
+    <Content Include="IndexSecretaria.aspx" />
+    <Content Include="InsertarUsuario.aspx" />
     <Content Include="Reportes.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -223,6 +225,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Secretaria.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -274,12 +277,34 @@
     <Compile Include="Citas.aspx.designer.cs">
       <DependentUpon>Citas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Encriptacion.cs" />
+    <Compile Include="IndexSecretaria.aspx.cs">
+      <DependentUpon>IndexSecretaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexSecretaria.aspx.designer.cs">
+      <DependentUpon>IndexSecretaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarUsuario.aspx.cs">
+      <DependentUpon>InsertarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarUsuario.aspx.designer.cs">
+      <DependentUpon>InsertarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Reportes.aspx.designer.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secretaria.Master.cs">
+      <DependentUpon>Secretaria.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secretaria.Master.designer.cs">
+      <DependentUpon>Secretaria.Master</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
@@ -369,6 +394,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_ClinicaDental\BLL_ClinicaDental.csproj">
+      <Project>{35770c78-8ba6-4e60-9fb9-00b0105bb5bf}</Project>
+      <Name>BLL_ClinicaDental</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DATOS_ClinicaDental\DATOS_ClinicaDental.csproj">
+      <Project>{f83c3ff9-e20a-4c5d-aebe-ba3622cf23a4}</Project>
+      <Name>DATOS_ClinicaDental</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL_ClinicaDental\DAL_ClinicaDental.csproj">
+      <Project>{f7531842-2c40-478a-8bd0-d4a698367555}</Project>
+      <Name>DAL_ClinicaDental</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

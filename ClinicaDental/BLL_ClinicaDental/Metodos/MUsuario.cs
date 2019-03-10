@@ -20,34 +20,35 @@ namespace BLL_ClinicaDental.Metodos
             usu = new DLL_ClinicaDental.Metodos.MUsuario();
         }
 
+
          public List<Usuario> ListarUsuarios()
          {
-             throw new NotImplementedException();
+             return usu.ListarUsuarios();
          }
 
          public Usuario BuscarUsuario(int IdUsuario)
          {
-             throw new NotImplementedException();
+             return usu.BuscarUsuario(IdUsuario);
          }
 
          public void InsertarUsuario(Usuario Usuario)
          {
-             throw new NotImplementedException();
+             usu.InsertarUsuario(Usuario);
          }
 
          public Usuario Login(int IdUsuario, string password)
          {
-             throw new NotImplementedException();
+            return usu.Login(IdUsuario, password);
          }
 
          public void ActualizarUsuario(Usuario Usuario)
          {
-             throw new NotImplementedException();
+             usu.ActualizarUsuario(Usuario);
          }
 
          public void EliminarUsuario(int IdUsuario)
          {
-             throw new NotImplementedException();
+             usu.EliminarUsuario(IdUsuario);
          }
     }
 }

@@ -1,3 +1,6 @@
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\UI_ClinicaDental.dll.config
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\UI_ClinicaDental.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\UI_ClinicaDental.pdb
@@ -17,8 +20,6 @@ C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.Facebook.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.ScriptManager.MSAjax.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.ScriptManager.WebForms.dll
@@ -53,7 +54,6 @@ C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\System.Web.Optimization.resources.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\EntityFramework.resources.dll
@@ -71,3 +71,10 @@ C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Ow
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.dll
 C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.pdb
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.csprojResolveAssemblyReference.cache
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\BLL_ClinicaDental.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\DATOS_ClinicaDental.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\DLL_ClinicaDental.dll
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\BLL_ClinicaDental.pdb
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\DATOS_ClinicaDental.pdb
+C:\Users\Chiky\Desktop\Github\ClinicaDental\UI_ClinicaDental\bin\DLL_ClinicaDental.pdb

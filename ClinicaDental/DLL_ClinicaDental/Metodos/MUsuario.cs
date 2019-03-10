@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DLL_ClinicaDental.Interfaces;
+using DATOS_ClinicaDental.Modelos;
 
 namespace DLL_ClinicaDental.Metodos
 {
@@ -23,32 +24,33 @@ namespace DLL_ClinicaDental.Metodos
 
           public List<DATOS_ClinicaDental.Modelos.Usuario> ListarUsuarios()
           {
-              throw new NotImplementedException();
+              return _db.Select<Usuario>();
           }
 
           public DATOS_ClinicaDental.Modelos.Usuario BuscarUsuario(int IdUsuario)
           {
-              throw new NotImplementedException();
+              return _db.Select<Usuario>(x => x.IdUsuario == IdUsuario)
+                   .FirstOrDefault();
           }
 
           public void InsertarUsuario(DATOS_ClinicaDental.Modelos.Usuario Usuario)
           {
-              throw new NotImplementedException();
+              _db.Insert(Usuario);
           }
 
           public DATOS_ClinicaDental.Modelos.Usuario Login(int IdUsuario, string password)
           {
-              throw new NotImplementedException();
+              return _db.Select<Usuario>(x => x.IdUsuario == IdUsuario && x.Clave == password).FirstOrDefault();
           }
 
           public void ActualizarUsuario(DATOS_ClinicaDental.Modelos.Usuario Usuario)
           {
-              throw new NotImplementedException();
+              _db.Update(Usuario);
           }
 
           public void EliminarUsuario(int IdUsuario)
           {
-              throw new NotImplementedException();
+              _db.Delete(IdUsuario);
           }
     }
 }
