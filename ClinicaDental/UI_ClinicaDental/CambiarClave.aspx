@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="form-line" id="divMantenimiento" runat="server" visible="false">
+    
 
     <div class="form-group">
       <asp:Label ID="lbNuevaClave" ForeColor="white" runat="server" Text="Nueva Contraseña: "></asp:Label>
@@ -39,8 +39,8 @@
         </div>
         <div class="form-group">
 
-            <asp:Label ID="lbClaveActual" ForeColor="white" runat="server" Text="Contraseña Actual: " TextMode="Password"></asp:Label>
-            <asp:TextBox ID="txtClaveActual" runat="server" CssClass="form-control"> </asp:TextBox>
+            <asp:Label ID="lbClaveActual" ForeColor="white" runat="server" Text="Contraseña Actual: " ></asp:Label>
+            <asp:TextBox ID="txtClaveActual" runat="server" CssClass="form-control" TextMode="Password" > </asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
                 ControlToValidate="txtClaveActual"
                 ErrorMessage="La actual contraseña es requerida."
@@ -53,7 +53,7 @@
         </div>
         <br />
         <div class="form-horizontal">
-            <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-warning" OnClick="btnModificar_Click" />
+            <asp:Button Text="Confirmar" runat="server" ID="btnCambiarClave" CssClass="btn btn-warning" OnClick="btnCambiarClave_Click" />
             
 
         </div>

@@ -49,15 +49,6 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl textoMensajeError;
         
         /// <summary>
-        /// divMantenimiento control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divMantenimiento;
-        
-        /// <summary>
         /// lbNuevaClave control.
         /// </summary>
         /// <remarks>
@@ -139,12 +130,12 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// btnModificar control.
+        /// btnCambiarClave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnModificar;
+        protected global::System.Web.UI.WebControls.Button btnCambiarClave;
     }
 }

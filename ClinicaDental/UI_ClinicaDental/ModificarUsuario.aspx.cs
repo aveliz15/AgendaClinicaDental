@@ -28,7 +28,7 @@ namespace UI_ClinicaDental
                 {
                       // int admin = Convert.ToInt32(Session["id"]);
 
-                    int admin = 1;
+                    int admin = Convert.ToInt32(Session["id"]);
                     Usuario c = usu.BuscarUsuario(admin);
 
                     txtIdUsuario.Text = c.IdUsuario.ToString();
@@ -57,8 +57,8 @@ namespace UI_ClinicaDental
             {
                 //Hago la busqueda para obtener la clave
                 
-                int admin = 1;
-               
+                int admin = Convert.ToInt32(Session["id"]);
+
                 Usuario c = usu.BuscarUsuario(admin);
 
                 string clave = c.Clave;
