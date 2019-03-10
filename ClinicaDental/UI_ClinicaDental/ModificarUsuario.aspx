@@ -3,7 +3,8 @@
 
     <link rel="stylesheet" href="estilos3.css">
 
-    <h2 style="color: white">Mantenimiento de Clientes</h2>
+    <h2 style="color: black">Mantenimiento de Usuarios</h2>
+    
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>

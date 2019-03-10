@@ -21,27 +21,33 @@ namespace UI_ClinicaDental
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
             try
             {
-                
+                if (!IsPostBack)
+                {
+                      // int admin = Convert.ToInt32(Session["id"]);
 
-               // int admin = Convert.ToInt32(Session["id"]);
-                int admin = 1;
-                var c = usu.BuscarUsuario(admin);
+                    int admin = 1;
+                    Usuario c = usu.BuscarUsuario(admin);
 
-                txtIdUsuario.Text =  c.IdUsuario.ToString();
-                txtNombre.Text = c.Nombre;
-                txtApellido1.Text = c.Apellido1.ToString();
-                txtApellido2.Text = c.Apellido2;
-                txtDireccion.Text = c.Direccion;
-                txtRol.Text = c.IdRol.ToString();
+                    txtIdUsuario.Text = c.IdUsuario.ToString();
+                    txtNombre.Text = c.Nombre;
+                    txtApellido1.Text = c.Apellido1.ToString();
+                    txtApellido2.Text = c.Apellido2;
+                    txtDireccion.Text = c.Direccion;
+                    txtRol.Text = c.IdRol.ToString();
+                }
+                else
+                {
+                    // Every Time Load When Any click button in page
+                }
+              
                
             }
             catch (Exception)
             {
                 MostrarMensajeError("No se han podido cargar los datos, intente mas tarde");
-
             }
         }
 
@@ -52,6 +58,7 @@ namespace UI_ClinicaDental
                 //Hago la busqueda para obtener la clave
                 
                 int admin = 1;
+               
                 Usuario c = usu.BuscarUsuario(admin);
 
                 string clave = c.Clave;
