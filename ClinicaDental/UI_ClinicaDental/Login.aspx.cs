@@ -57,16 +57,21 @@ namespace UI_ClinicaDental
                          Session["usuario"] = admin.Nombre;
                          Session["id"] = admin.IdUsuario;
                          Session["contra"] = Encriptacion.Decriptar(admin.Clave);
+                        
                          if (admin.IdRol == 0)
                          {
                              Response.Redirect("IndexDentista.aspx");
                          }
-                         else
+                         else if(admin.IdRol == 1)
                          {
-                             MostrarMensajeError("usuario o contraseña invalidas");
-
+                             Response.Redirect("IndexSecretaria.aspx");
                          }
-                 }
+
+                     }
+                     else
+                     {
+                         MostrarMensajeError("Usuario o contraseña invalidas");
+                     }
             }
             catch (Exception)
             {

@@ -62,7 +62,7 @@ namespace UI_ClinicaDental
                 }
                 else
                 {
-                    MostrarMensajeError("Los campos de contraseña nueva no coinciden");
+                    MostrarMensajeError("Los campos de contraseña nueva o actual no coinciden, intente de nuevo");
                 }
             }
             catch (Exception ex)

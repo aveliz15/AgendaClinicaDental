@@ -47,20 +47,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/LoginDentista">Clinica Dental</a>
+                    <a class="navbar-brand" runat="server" style="color:white" href="~/LoginDentista">Logo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+<%--                        --%>
                         
-                        
-                        <li><a runat="server" href="~/Ayuda">Ayuda</a></li>
-                        <li><a runat="server" href="~/Registrarse">Registrarse</a></li>
+                        <%--<li><a runat="server" href="~/Ayuda">Ayuda</a></li>--%>
+                        <%--<li><a runat="server" href="~/Registrarse">Registrarse</a></li>--%>
                       
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" class="btn btn-danger" href="~/Account/Register">Registrarse</a></li>
+                                <li><a runat="server" class="btn btn-primary" style="color:white" href="~/Ayuda">Ayuda</a></li>
                             
                             </ul>
                         </AnonymousTemplate>
@@ -68,7 +68,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <%--<asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />--%>
                                 </li>
                             </ul>
                         </LoggedInTemplate>

@@ -14,7 +14,15 @@ namespace UI_ClinicaDental
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+            ListItem i;
+            i = new ListItem("Dentista", "1");
+            DDLRol.Items.Add(i);
+            i = new ListItem("Asistente", "2");
+            DDLRol.Items.Add(i);
+            }
+           
         }
 
         protected void btnLimpiar_Click(object sender, EventArgs e)
@@ -30,7 +38,7 @@ namespace UI_ClinicaDental
             txtIdUsuario.Text = String.Empty;
             txtNombre.Text = String.Empty;
             txtClave.Text = String.Empty;
-            txtRol.Text = String.Empty;
+            
         }
         private void MostrarMensaje(string texto)
         {
@@ -52,6 +60,13 @@ namespace UI_ClinicaDental
         {
             try
             {
+                int rol;
+                if (DDLRol.SelectedIndex == 0)
+                {
+                    rol = 0;
+                }else{
+                    rol = 1;
+                }
                 IUsuario iusuario = new MUsuario();
                 string clave;
                 if (txtClave.Text == txtValidarClave.Text)
@@ -65,12 +80,9 @@ namespace UI_ClinicaDental
                         Apellido1 = txtApellido1.Text,
                         Apellido2 = txtApellido2.Text,
                         Direccion = txtDireccion.Text,
-                        IdRol = Convert.ToInt32(txtRol.Text),
+                        IdRol = rol,
                         Clave = clave
-                       
-                        
-
-
+       
                     };
                     iusuario.InsertarUsuario(usuario);
                     MostrarMensaje("Usuario insertado correctamente!");

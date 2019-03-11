@@ -32,11 +32,13 @@ namespace UI_ClinicaDental
                     Usuario c = usu.BuscarUsuario(admin);
 
                     txtIdUsuario.Text = c.IdUsuario.ToString();
+                    txtIdUsuario.ReadOnly = true;
                     txtNombre.Text = c.Nombre;
                     txtApellido1.Text = c.Apellido1.ToString();
                     txtApellido2.Text = c.Apellido2;
                     txtDireccion.Text = c.Direccion;
                     txtRol.Text = c.IdRol.ToString();
+                    txtRol.ReadOnly = true;
                 }
                 else
                 {
@@ -103,6 +105,12 @@ namespace UI_ClinicaDental
             mensajeError.Visible = true;
             textoMensajeError.InnerHtml = texto;
             textoMensaje.InnerHtml = string.Empty;
+        }
+
+
+        protected void btnCambiarClave_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/CambiarClave");
         }
     }
 }

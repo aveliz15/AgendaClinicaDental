@@ -182,7 +182,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="LoginUsuario.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -190,7 +189,6 @@
     <Content Include="Account\Web.config" />
     <Content Include="IndexDentista.aspx" />
     <Content Include="LoginDentista.Master" />
-    <Content Include="LoginUsuario.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -365,20 +363,6 @@
     </Compile>
     <Compile Include="LoginDentista.Master.designer.cs">
       <DependentUpon>LoginDentista.Master</DependentUpon>
-    </Compile>
-    <Compile Include="LoginUsuario.aspx.cs">
-      <DependentUpon>LoginUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginUsuario.aspx.designer.cs">
-      <DependentUpon>LoginUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginUsuario.Master.cs">
-      <DependentUpon>LoginUsuario.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginUsuario.Master.designer.cs">
-      <DependentUpon>LoginUsuario.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

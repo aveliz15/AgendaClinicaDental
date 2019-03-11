@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" href="estilos3.css">
 
-    <h2 style="color: white">Cambio de Contraseña</h2>
+    <h2 style="color: black">Cambio de Contraseña</h2>
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -19,7 +19,7 @@
     
 
     <div class="form-group">
-      <asp:Label ID="lbNuevaClave" ForeColor="white" runat="server" Text="Nueva Contraseña: "></asp:Label>
+      <asp:Label ID="lbNuevaClave" ForeColor="black" runat="server" Text="Nueva Contraseña: "></asp:Label>
         <asp:TextBox ID="txtNuevaClave" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
             ControlToValidate="txtNuevaClave"
@@ -29,7 +29,7 @@
      </div>
 
         <div class="form-group">
-            <asp:Label ID="lbNuevaClave2" ForeColor="white" runat="server" Text="Confirmación: "></asp:Label>
+            <asp:Label ID="lbNuevaClave2" ForeColor="black" runat="server" Text="Confirmación de contraseña: "></asp:Label>
             <asp:TextBox ID="txtNuevaClave2" runat="server" CssClass="form-control" TextMode="Password"> </asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
                 ControlToValidate="txtNuevaClave2"
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
 
-            <asp:Label ID="lbClaveActual" ForeColor="white" runat="server" Text="Contraseña Actual: " ></asp:Label>
+            <asp:Label ID="lbClaveActual" ForeColor="black" runat="server" Text="Contraseña Actual: " ></asp:Label>
             <asp:TextBox ID="txtClaveActual" runat="server" CssClass="form-control" TextMode="Password" > </asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
                 ControlToValidate="txtClaveActual"
@@ -48,12 +48,10 @@
             </asp:RequiredFieldValidator>
         </div>
 
-        
        
-        </div>
-        <br />
+       
         <div class="form-horizontal">
-            <asp:Button Text="Confirmar" runat="server" ID="btnCambiarClave" CssClass="btn btn-warning" OnClick="btnCambiarClave_Click" />
+       &nbsp;   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button Text="Confirmar"  runat="server" ID="btnCambiarClave" CssClass="btn btn-success" OnClick="btnCambiarClave_Click" />
             
 
         </div>

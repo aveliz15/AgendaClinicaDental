@@ -39,7 +39,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,22 +47,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/IndexDentista">Clinica Dental</a>
+                    <a class="navbar-brand" style="color:white" runat="server" href="~/IndexDentista">Logo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         
                         
-                        <li><a runat="server" href="~/Usuarios">Usuarios</a></li>
-                        <li><a runat="server" href="~/Pacientes">Pacientes</a></li>
-                        <li><a runat="server" href="~/Diagnosticos">Diagnosticos</a></li>
-                        <li><a runat="server" href="~/Citas">Citas</a></li>
-                        <li><a runat="server" href="~/Reportes">Reportes</a></li>
+                        <li><a runat="server" style="color:white" href="~/Usuarios">Usuarios</a></li>
+                        <li><a runat="server" style="color:white" href="~/Pacientes">Pacientes</a></li>
+                        <li><a runat="server" style="color:white" href="~/Diagnosticos">Diagnosticos</a></li>
+                        <li><a runat="server" style="color:white" href="~/Citas">Citas</a></li>
+                        <li><a runat="server" style="color:white" href="~/Reportes">Reportes</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                               <li><a runat="server" class="btn btn-danger" href="~/Account/Register">Registrarse</a></li>
+                                 <li><a runat="server" class="btn btn-primary" style="color:white" href="~/ModificarUsuario">Mi cuenta</a></li>
+                               <li><a runat="server" class="btn btn-primary" style="color:white" href="~/Login">Salir</a></li>
                             
                             </ul>
                         </AnonymousTemplate>
@@ -70,7 +71,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <%--<asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />--%>
                                 </li>
                             </ul>
                         </LoggedInTemplate>
@@ -83,7 +84,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+          &nbsp; &nbsp;      <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
             </footer>
         </div>
     </form>

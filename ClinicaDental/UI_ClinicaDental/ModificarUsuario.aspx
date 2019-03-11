@@ -3,7 +3,7 @@
 
     <link rel="stylesheet" href="estilos3.css">
 
-    <h2 style="color: black">Mantenimiento de Usuarios</h2>
+    <h2 style="color: black">Modificar datos del usuario</h2>
     
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
@@ -19,7 +19,7 @@
     <div class="form-line" id="divMantenimiento" runat="server">
 
     <div class="form-group">
-      <asp:Label ID="lbIdUsuario" ForeColor="white" runat="server" Text="ID Usuario: "></asp:Label>
+      <asp:Label ID="lbIdUsuario" ForeColor="black" runat="server" Text="ID Usuario: "></asp:Label>
         <asp:TextBox ID="txtIdUsuario" runat="server" CssClass="form-control"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
             ControlToValidate="txtIdUsuario"
@@ -29,7 +29,7 @@
      </div>
 
         <div class="form-group">
-            <asp:Label ID="lbNombre" ForeColor="white" runat="server" Text="Nombre: "></asp:Label>
+            <asp:Label ID="lbNombre" ForeColor="black" runat="server" Text="Nombre: "></asp:Label>
             <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
                 ControlToValidate="txtNombre"
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
 
-            <asp:Label ID="lbApellido1" ForeColor="white" runat="server" Text="Primer Apellido: "></asp:Label>
+            <asp:Label ID="lbApellido1" ForeColor="black" runat="server" Text="Primer Apellido: "></asp:Label>
             <asp:TextBox ID="txtApellido1" runat="server" CssClass="form-control"> </asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
                 ControlToValidate="txtApellido1"
@@ -49,7 +49,7 @@
         </div>
 
         <div class="form-group">
-            <asp:Label ID="lbApellido2" ForeColor="white" runat="server" Text="Segundo Apellido: "></asp:Label>
+            <asp:Label ID="lbApellido2" ForeColor="black" runat="server" Text="Segundo Apellido: "></asp:Label>
             <asp:TextBox ID="txtApellido2" runat="server" CssClass="form-control" ></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
                 ControlToValidate="txtApellido2"
@@ -59,7 +59,7 @@
         </div>
 
         <div class="form-group">
-            <asp:Label ID="lbDireccion" ForeColor="white" runat="server" Text="Direccion: "></asp:Label>
+            <asp:Label ID="lbDireccion" ForeColor="black" runat="server" Text="Direccion: "></asp:Label>
             <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" ></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
                 ControlToValidate="txtDireccion"
@@ -69,7 +69,7 @@
         </div>
         <div class="form-group">
 
-            <asp:Label ID="lbRol" ForeColor="white" runat="server" Text="Rol: "></asp:Label>
+            <asp:Label ID="lbRol" ForeColor="black" runat="server" Text="Rol: "></asp:Label>
             <asp:TextBox ID="txtRol" runat="server" CssClass="form-control"  ></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
                 ControlToValidate="txtRol"
@@ -81,16 +81,16 @@
         </div>
         <br />
         <div class="form-horizontal">
-            <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-warning" OnClick="btnModificar_Click" />
+            <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-success" OnClick="btnModificar_Click" />
             
-
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button Text="Cambiar clave" OnClick="btnCambiarClave_Click" runat="server" ID="btnCambiarClave" CssClass="btn btn-primary" />
         </div>
-
-          <div class="form-horizontal">
-           <a href="CambiarClave.aspx">Cambiar Contraseña</a>
-            
-
-        </div>
+    
+          
+           
+             
+    
+      
 
 
 </asp:Content>
