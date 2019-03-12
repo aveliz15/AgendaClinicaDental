@@ -73,7 +73,7 @@
             <asp:TextBox ID="txtRol" runat="server" CssClass="form-control"  ></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
                 ControlToValidate="txtRol"
-                ErrorMessage="El teléfono es requerido."
+                ErrorMessage="El rol es requerido."
                 ForeColor="Red">
             </asp:RequiredFieldValidator>
         </div>

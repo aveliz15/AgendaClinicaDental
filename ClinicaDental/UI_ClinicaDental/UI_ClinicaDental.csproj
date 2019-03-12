@@ -162,6 +162,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BuscarUsuario.aspx" />
     <Content Include="CambiarClave.aspx" />
     <Content Include="Citas.aspx" />
     <Content Include="Content\Estilos.css" />
@@ -274,6 +275,13 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="BuscarUsuario.aspx.cs">
+      <DependentUpon>BuscarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarUsuario.aspx.designer.cs">
+      <DependentUpon>BuscarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CambiarClave.aspx.cs">
       <DependentUpon>CambiarClave.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
