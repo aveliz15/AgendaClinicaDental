@@ -164,3 +164,4 @@ C:\Users\joseA\Desktop\AgendaClinicaDental\ClinicaDental\UI_ClinicaDental\obj\De
 C:\Users\joseA\Desktop\AgendaClinicaDental\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.csproj.CopyComplete
 C:\Users\joseA\Desktop\AgendaClinicaDental\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.dll
 C:\Users\joseA\Desktop\AgendaClinicaDental\ClinicaDental\UI_ClinicaDental\obj\Debug\UI_ClinicaDental.pdb
+C:\Users\joseA\Desktop\AgendaClinicaDental\ClinicaDental\UI_ClinicaDental\bin\SimpleCrypto.dll

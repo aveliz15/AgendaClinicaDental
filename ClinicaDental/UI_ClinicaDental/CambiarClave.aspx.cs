@@ -50,7 +50,8 @@ namespace UI_ClinicaDental
                         Apellido2 = c.Apellido2,
                         Direccion = c.Direccion,
                         IdRol = Convert.ToInt32(c.IdRol),
-                        Clave = Encriptacion.Encriptar(txtNuevaClave.Text)
+                        Clave = Encriptacion.Encriptar(txtNuevaClave.Text),
+                        Correo = c.Correo
 
                 };
 

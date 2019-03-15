@@ -11,6 +11,7 @@ namespace BLL_ClinicaDental.Interfaces
     {
         List<Usuario> ListarUsuarios();
         Usuario BuscarUsuario(int IdUsuario);
+        void ActualizarClave(string clave,int idUsuario);
         void InsertarUsuario(Usuario Usuario);
         Usuario Login(int IdUsuario, string password);
         void ActualizarUsuario(Usuario Usuario);

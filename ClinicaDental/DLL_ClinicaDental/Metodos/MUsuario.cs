@@ -47,8 +47,14 @@ namespace DLL_ClinicaDental.Metodos
           {
               _db.Update(Usuario);
           }
-
-          public void EliminarUsuario(int IdUsuario)
+        public void ActualizarClave(string clave,int idUsuario)
+        {
+             Usuario c = BuscarUsuario(idUsuario);
+                c.Clave = clave;
+            
+            _db.Update(c);
+        }
+        public void EliminarUsuario(int IdUsuario)
           {
               _db.Delete(IdUsuario);
           }

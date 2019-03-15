@@ -84,7 +84,8 @@
             <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-success" OnClick="btnModificar_Click" />
             
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button Text="Cambiar clave" OnClick="btnCambiarClave_Click" runat="server" ID="btnCambiarClave" CssClass="btn btn-primary" />
-        </div>
+       
+            </div>
     
           
            

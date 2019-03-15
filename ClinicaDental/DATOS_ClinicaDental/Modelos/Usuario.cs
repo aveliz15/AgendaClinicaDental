@@ -15,5 +15,6 @@ namespace DATOS_ClinicaDental.Modelos
         public string Direccion { get; set; }
         public int IdRol { get; set; }
         public string Clave { get; set; }
+        public string Correo { get; set; }
     }
 }

@@ -57,5 +57,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    
+     </div>
+    <asp:HyperLink ID="Link1" runat="server" NavigateUrl="~/RecuperarPassword.aspx" Text="Recuperar Constraseña" />
+   
 </asp:Content>

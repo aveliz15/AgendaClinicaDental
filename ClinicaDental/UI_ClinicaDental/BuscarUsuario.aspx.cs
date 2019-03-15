@@ -112,6 +112,7 @@ namespace UI_ClinicaDental
             buscar.Visible = true;
             gridview.Visible = true;
         }
+
         public int rol;
         protected void Confirmar_Click(object sender, EventArgs e)
         {
