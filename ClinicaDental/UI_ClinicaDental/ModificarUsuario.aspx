@@ -77,7 +77,15 @@
                 ForeColor="Red">
             </asp:RequiredFieldValidator>
         </div>
-       
+             <div class="form-group">
+            <asp:Label ID="lbCorreo" ForeColor="black" runat="server" Text="Correo: "></asp:Label>
+            <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
+                ControlToValidate="txtCorreo"
+                ErrorMessage="El correo es requerido."
+                ForeColor="Red">
+            </asp:RequiredFieldValidator>
+        </div>
         </div>
         <br />
         <div class="form-horizontal">

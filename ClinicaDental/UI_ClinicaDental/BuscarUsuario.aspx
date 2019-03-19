@@ -84,10 +84,20 @@
         <asp:Label ID="lbRol" ForeColor="black" runat="server" Text="Tipo de usuario: "></asp:Label>
        <asp:DropDownList ID="DDLRol" CssClass="form-control" Width="280px" runat="server"></asp:DropDownList>
             <br />
-        &nbsp;<asp:Button ID="Volver" runat="server" Text="Volver" CssClass="btn btn-warning" OnClick="Volver_Click" Width="120px" BorderStyle="Dashed" BorderColor="LightYellow" BorderWidth="1px" />
+        </div>
+         <div class="form-group">
+            <asp:Label ID="lbCorreo" ForeColor="black" runat="server" Text="Correo: "></asp:Label>
+            <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
+                ControlToValidate="txtCorreo"
+                ErrorMessage="El correo es requerido."
+                ForeColor="Red">
+            </asp:RequiredFieldValidator>
+        </div>
+        <br />
+         &nbsp;<asp:Button ID="Volver" runat="server" Text="Volver" CssClass="btn btn-warning" OnClick="Volver_Click" Width="120px" BorderStyle="Dashed" BorderColor="LightYellow" BorderWidth="1px" />
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <asp:Button ID="Confirmar" runat="server" Text="Confirmar" CssClass="btn btn-success" OnClick="Confirmar_Click" Width="120px" BorderStyle="Dashed" BorderColor="LightYellow" BorderWidth="1px"/>
-        </div>
         </div>
     
 </asp:Content>

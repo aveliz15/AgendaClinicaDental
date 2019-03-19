@@ -171,6 +171,8 @@
     <Content Include="Content\Estilos.css" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="IndexSecretaria.aspx" />
+    <Content Include="InsertarPacienteD.aspx" />
+    <Content Include="InsertarPacienteS.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="ModificarUsuario.aspx" />
@@ -307,6 +309,20 @@
     </Compile>
     <Compile Include="IndexSecretaria.aspx.designer.cs">
       <DependentUpon>IndexSecretaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarPacienteD.aspx.cs">
+      <DependentUpon>InsertarPacienteD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarPacienteD.aspx.designer.cs">
+      <DependentUpon>InsertarPacienteD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarPacienteS.aspx.cs">
+      <DependentUpon>InsertarPacienteS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarPacienteS.aspx.designer.cs">
+      <DependentUpon>InsertarPacienteS.aspx</DependentUpon>
     </Compile>
     <Compile Include="InsertarUsuario.aspx.cs">
       <DependentUpon>InsertarUsuario.aspx</DependentUpon>

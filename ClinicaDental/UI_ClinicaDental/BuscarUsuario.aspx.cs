@@ -36,6 +36,7 @@ namespace UI_ClinicaDental
             GV1.HeaderRow.Cells[2].Text = "Primer apellido"; 
                 GV1.HeaderRow.Cells[3].Text = "Segundo apellido";
                 GV1.HeaderRow.Cells[5].Text = "ID Rol";
+                GV1.HeaderRow.Cells[7].Text = "Correo";
             
                 for (int w = 0; w < GV1.Rows.Count; w++)
 			{
@@ -88,6 +89,7 @@ namespace UI_ClinicaDental
                      txtApellido1.Text = u.Apellido1;
                      txtApellido2.Text = u.Apellido2;
                      txtDireccion.Text = u.Direccion;
+                     txtCorreo.Text = u.Correo;
                      buscar.Visible = false;
                      gridview.Visible = false;
                 }
@@ -137,7 +139,8 @@ namespace UI_ClinicaDental
                     Apellido2 = txtApellido2.Text,
                     Direccion = txtDireccion.Text,
                     IdRol = rol,
-                    Clave = u.Clave
+                    Clave = u.Clave,
+                    Correo = txtCorreo.Text
 
                 };
                
