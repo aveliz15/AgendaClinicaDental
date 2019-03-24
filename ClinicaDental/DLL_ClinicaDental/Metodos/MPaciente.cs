@@ -42,7 +42,7 @@ namespace DLL_ClinicaDental.Metodos
 
 
 
-          public void ActualizarPaciente(DATOS_ClinicaDental.Modelos.Usuario paciente)
+          public void ActualizarPaciente(DATOS_ClinicaDental.Modelos.Paciente paciente)
           {
               _db.Update(paciente);
           }

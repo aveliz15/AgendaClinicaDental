@@ -175,6 +175,7 @@
     <Content Include="InsertarPacienteS.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ModificarPacienteS.aspx" />
     <Content Include="ModificarUsuario.aspx" />
     <Content Include="RecuperarPassword.aspx" />
     <Content Include="Reportes.aspx" />
@@ -337,6 +338,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPacienteS.aspx.cs">
+      <DependentUpon>ModificarPacienteS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPacienteS.aspx.designer.cs">
+      <DependentUpon>ModificarPacienteS.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarUsuario.aspx.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>

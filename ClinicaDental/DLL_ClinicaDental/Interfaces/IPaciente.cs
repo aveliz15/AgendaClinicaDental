@@ -13,7 +13,7 @@ namespace DLL_ClinicaDental.Interfaces
         Paciente BuscarPaciente(int IdPaciente);
         void InsertarPaciente(Paciente paciente);
         
-        void ActualizarPaciente(Usuario paciente);
+        void ActualizarPaciente(Paciente paciente);
         void EliminarPaciente(int IdPaciente);
     }
 }

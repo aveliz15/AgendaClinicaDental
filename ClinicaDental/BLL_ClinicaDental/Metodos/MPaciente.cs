@@ -32,7 +32,7 @@ namespace BLL_ClinicaDental.Metodos
          }
 
 
-         public void ActualizarPaciente(DATOS_ClinicaDental.Modelos.Usuario paciente)
+         public void ActualizarPaciente(DATOS_ClinicaDental.Modelos.Paciente paciente)
          {
              usu.ActualizarPaciente(paciente);
          }

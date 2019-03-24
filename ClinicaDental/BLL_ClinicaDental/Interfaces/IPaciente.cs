@@ -12,7 +12,7 @@ namespace BLL_ClinicaDental.Interfaces
         List<Paciente> ListarPacientes();
         Paciente BuscarPaciente(int IdPaciente);
         void InsertarPaciente(Paciente paciente);
-        void ActualizarPaciente(Usuario paciente);
+        void ActualizarPaciente(Paciente paciente);
         void EliminarPaciente(int IdPaciente);
     }
 }
