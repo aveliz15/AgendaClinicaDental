@@ -1,7 +1,38 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Secretaria.Master" AutoEventWireup="true" CodeBehind="ModificarPacienteS.aspx.cs" Inherits="UI_ClinicaDental.ModificarPacienteS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+   
     <link rel="stylesheet" href="estilos3.css">
+ <!--   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    
+    <script>
 
+        $(document).ready(function () {
+    $('#tblPacientes').DataTable();
+        });
+
+    </script>
+
+
+    <table runat="server" id="tblPacientes" class="display">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+    -->
     <h2 style="color: black">Modificar datos del paciente</h2>
     
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">

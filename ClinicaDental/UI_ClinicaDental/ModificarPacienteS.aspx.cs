@@ -3,9 +3,12 @@ using BLL_ClinicaDental.Metodos;
 using DATOS_ClinicaDental.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace UI_ClinicaDental
@@ -31,7 +34,10 @@ namespace UI_ClinicaDental
                     DDLTipoOntograma.Items.Add(i);
                     i = new ListItem("Adulto", "2");
                     DDLTipoOntograma.Items.Add(i);
-                    //int admin = Convert.ToInt32(Session["id"]);
+                    //int admin = Convert.ToInt32(Session["id"]);                   
+
+                  
+                    
 
                 }
             }

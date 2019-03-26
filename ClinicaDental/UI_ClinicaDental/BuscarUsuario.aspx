@@ -1,6 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dentista.Master" AutoEventWireup="true" CodeBehind="BuscarUsuario.aspx.cs" Inherits="UI_ClinicaDental.BuscarUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script>
+    $(function () {
+    $(".gvv").prepend( $("<thead></thead>").append( $(this).find("tr:first") ) ).dataTable();
+});
+</script>
+
+    <script>
+
+        $(document).ready(function () {
+    $('#GV1').DataTable();
+        });
+
+    </script>
      <h2 style="color:black">Busqueda de usuarios</h2>
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
@@ -17,14 +31,8 @@
     <br />
     <br />
     <div id="gridview" runat="server">
-    <asp:GridView ID="GV1"  runat="server" 
-        UseAccessibleHeader="true" 
-        RowStyle-BackColor="LightGray" 
-        Font-Size="Small"
-        HeaderStyle-Font-Bold="true" 
-        HeaderStyle-BackColor="LightSkyBlue"
-        CssClass="table table-responsive" 
-        BorderColor="white">
+    <asp:GridView ID="GV1"  runat="server" CssClass="gvv" >
+     
        
     </asp:GridView>
         </div>
