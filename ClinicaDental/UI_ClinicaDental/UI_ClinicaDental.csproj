@@ -56,6 +56,9 @@
     <Reference Include="ServiceStack.Text">
       <HintPath>..\packages\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleCrypto, Version=26.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleCrypto.0.3.30.26\lib\SimpleCrypto.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -168,9 +171,13 @@
     <Content Include="Content\Estilos.css" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="IndexSecretaria.aspx" />
+    <Content Include="InsertarPacienteD.aspx" />
+    <Content Include="InsertarPacienteS.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ModificarPacienteS.aspx" />
     <Content Include="ModificarUsuario.aspx" />
+    <Content Include="RecuperarPassword.aspx" />
     <Content Include="Reportes.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -304,6 +311,20 @@
     <Compile Include="IndexSecretaria.aspx.designer.cs">
       <DependentUpon>IndexSecretaria.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InsertarPacienteD.aspx.cs">
+      <DependentUpon>InsertarPacienteD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarPacienteD.aspx.designer.cs">
+      <DependentUpon>InsertarPacienteD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarPacienteS.aspx.cs">
+      <DependentUpon>InsertarPacienteS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarPacienteS.aspx.designer.cs">
+      <DependentUpon>InsertarPacienteS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InsertarUsuario.aspx.cs">
       <DependentUpon>InsertarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -318,12 +339,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ModificarPacienteS.aspx.cs">
+      <DependentUpon>ModificarPacienteS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPacienteS.aspx.designer.cs">
+      <DependentUpon>ModificarPacienteS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModificarUsuario.aspx.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ModificarUsuario.aspx.designer.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarPassword.aspx.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarPassword.aspx.designer.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>

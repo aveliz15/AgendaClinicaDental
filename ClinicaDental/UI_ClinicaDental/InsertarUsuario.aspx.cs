@@ -38,6 +38,7 @@ namespace UI_ClinicaDental
             txtIdUsuario.Text = String.Empty;
             txtNombre.Text = String.Empty;
             txtClave.Text = String.Empty;
+            txtCorreo.Text = String.Empty;
             
         }
         private void MostrarMensaje(string texto)
@@ -81,7 +82,8 @@ namespace UI_ClinicaDental
                         Apellido2 = txtApellido2.Text,
                         Direccion = txtDireccion.Text,
                         IdRol = rol,
-                        Clave = clave
+                        Clave = clave,
+                        Correo = txtCorreo.Text
        
                     };
                     iusuario.InsertarUsuario(usuario);

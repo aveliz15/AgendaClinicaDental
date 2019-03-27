@@ -38,6 +38,7 @@ namespace UI_ClinicaDental
                     txtApellido2.Text = c.Apellido2;
                     txtDireccion.Text = c.Direccion;
                     txtRol.Text = c.IdRol.ToString();
+                    txtCorreo.Text = c.Correo;
                     txtRol.ReadOnly = true;
                 }
                 else
@@ -74,7 +75,8 @@ namespace UI_ClinicaDental
                     Apellido2 = txtApellido2.Text,
                     Direccion = txtDireccion.Text,
                     IdRol = Convert.ToInt32(c.IdRol),
-                    Clave = c.Clave            
+                    Clave = c.Clave,
+                    Correo = txtCorreo.Text
                 };
 
                 //Actializo el objeto

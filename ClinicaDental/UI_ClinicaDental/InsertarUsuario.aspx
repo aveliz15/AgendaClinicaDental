@@ -58,15 +58,17 @@
                                 ForeColor="Red">
                             </asp:RequiredFieldValidator> 
         <br />
-        
+                <asp:Label ID="LbCorreo" ForeColor="black" runat="server" Text="Correo: "></asp:Label>
+        <asp:TextBox ID="txtCorreo" runat="server" Width="280px" TextMode="Email" CssClass="form-control"  ></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
+                                ControlToValidate="txtCorreo"
+                                ErrorMessage="El correo es requerido."
+                                ForeColor="Red">
+                            </asp:RequiredFieldValidator> 
+        <br />
          <asp:Label ID="lbRol" ForeColor="black" runat="server" Text="Tipo de usuario: "></asp:Label>
        <asp:DropDownList ID="DDLRol" CssClass="form-control" Width="280px" runat="server"></asp:DropDownList>
-      <%--  <asp:TextBox ID="txtRol" runat="server" CssClass="form-control" placeholder="ID Rol:" ></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server"
-                                ControlToValidate="txtRol"
-                                ErrorMessage="El numero de rol es requerido."
-                                ForeColor="Red">
-                            </asp:RequiredFieldValidator> --%>
+      
         <br />
         <asp:Label ID="LBclave1" ForeColor="black" runat="server" Text="Clave: "></asp:Label>
         <asp:TextBox ID="txtClave" runat="server" CssClass="form-control"  textMode="password"></asp:TextBox>

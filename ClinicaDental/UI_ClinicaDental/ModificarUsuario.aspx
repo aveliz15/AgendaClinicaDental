@@ -77,14 +77,23 @@
                 ForeColor="Red">
             </asp:RequiredFieldValidator>
         </div>
-       
+             <div class="form-group">
+            <asp:Label ID="lbCorreo" ForeColor="black" runat="server" Text="Correo: "></asp:Label>
+            <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
+                ControlToValidate="txtCorreo"
+                ErrorMessage="El correo es requerido."
+                ForeColor="Red">
+            </asp:RequiredFieldValidator>
+        </div>
         </div>
         <br />
         <div class="form-horizontal">
             <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-success" OnClick="btnModificar_Click" />
             
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button Text="Cambiar clave" OnClick="btnCambiarClave_Click" runat="server" ID="btnCambiarClave" CssClass="btn btn-primary" />
-        </div>
+       
+            </div>
     
           
            

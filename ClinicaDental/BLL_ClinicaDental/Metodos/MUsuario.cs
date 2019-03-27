@@ -50,5 +50,12 @@ namespace BLL_ClinicaDental.Metodos
          {
              usu.EliminarUsuario(IdUsuario);
          }
+
+        public void ActualizarClave(string clave,int idUsuario)
+        {
+           usu.ActualizarClave(clave,idUsuario);
+        }
+
+     
     }
 }

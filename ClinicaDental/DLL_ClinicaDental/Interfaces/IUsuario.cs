@@ -15,5 +15,6 @@ namespace DLL_ClinicaDental.Interfaces
         Usuario Login(int IdUsuario, string password);
         void ActualizarUsuario(Usuario Usuario);
         void EliminarUsuario(int IdUsuario);
+        void ActualizarClave(string clave,int idUsuario);
     }
 }

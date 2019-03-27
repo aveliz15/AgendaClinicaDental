@@ -12,9 +12,13 @@ namespace UI_ClinicaDental
     public partial class Login : System.Web.UI.Page
     {
         IUsuario iusu;
+   
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            iusu = new MUsuario();
+
+         iusu = new MUsuario();
+
         }
 
         public void Limpiar()
@@ -43,6 +47,7 @@ namespace UI_ClinicaDental
             textoMensaje.InnerHtml = string.Empty;
         }
 
+    
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             try
