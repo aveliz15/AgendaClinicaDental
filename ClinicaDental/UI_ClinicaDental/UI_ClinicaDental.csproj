@@ -169,6 +169,7 @@
     <Content Include="CambiarClave.aspx" />
     <Content Include="Citas.aspx" />
     <Content Include="Content\Estilos.css" />
+    <Content Include="Diagnostico.aspx" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="IndexSecretaria.aspx" />
     <Content Include="InsertarPacienteD.aspx" />
@@ -302,6 +303,13 @@
     </Compile>
     <Compile Include="Citas.aspx.designer.cs">
       <DependentUpon>Citas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostico.aspx.cs">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagnostico.aspx.designer.cs">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Encriptacion.cs" />
     <Compile Include="IndexSecretaria.aspx.cs">
