@@ -4,7 +4,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
+    <br />
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -15,13 +15,14 @@
         <strong id="textoMensajeError" runat="server"></strong>
     </div>
       
+    <div id="buscador" runat="server">
     <h2 style="color: black">Ver diagnostico del paciente</h2>
     <div id="buscar" class="form-inline" runat="server">
       <asp:TextBox ID="ttIdPaciente" runat="server"  Width="300px" TextMode="Number" CssClass="form-control" ></asp:TextBox>
          <asp:Button Text="Buscar" runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
         </div>
-
-<div  id="divOdontograma" runat="server">    
+    </div>
+<div  id="divOdontogramaNiño" runat="server">    
      <h2 id="tituloPaciente" runat="server">Paciente: </h2>
     <h3>Niños</h3>
     <div class="container-fluid">
@@ -78,7 +79,11 @@
     
   </div>
         </div>
+    <br />
+     <asp:Button Text="Volver" runat="server" ID="Volver" CssClass="btn btn-warning" OnClick="Volver_Click" />
+     </div>
 
+    <div  id="divOdontogramaAdulto" runat="server"> 
        <h3>Adulto</h3>
     <div class="container-fluid">
   <div class="row ">
@@ -167,22 +172,11 @@
         </div>
     <div class="col-sm-1"> <asp:Button ID="d52" runat="server" Width="44px" Text="2"  CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
         </div>
-    <div class="col-sm-1"> <asp:Button ID="d53" runat="server" Width="44px" Text="3" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
-    <div class="col-sm-1" > <asp:Button ID="d54" runat="server" Width="44px" Text="4" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
-          <div class="col-sm-1 "> <asp:Button ID="d55" runat="server" Width="44px" Text="5" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
-
-
-    <div class="col-sm-1"> <asp:Button ID="d56" runat="server" Width="44px" Text="6" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
-    <div class="col-sm-1"> <asp:Button ID="d57" runat="server" Width="44px" Text="7" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
-    <div class="col-sm-1" > <asp:Button ID="d58" runat="server" Width="44px" Text="8" CssClass="btn btn-success" ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-        </div>
+   
       
      </div>
          </div>
+        <br />
+        <asp:Button Text="Volver" runat="server" ID="Volver2" CssClass="btn btn-warning" OnClick="Volver2_Click" />
     </div><!-- Final divOdontograma -->
 </asp:Content>
