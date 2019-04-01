@@ -103,42 +103,6 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tituloPaciente;
         
         /// <summary>
-        /// Control d1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d1;
-        
-        /// <summary>
-        /// Control d2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d2;
-        
-        /// <summary>
-        /// Control d3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d3;
-        
-        /// <summary>
-        /// Control d4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d4;
-        
-        /// <summary>
         /// Control d5.
         /// </summary>
         /// <remarks>
@@ -157,6 +121,15 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.WebControls.Button d6;
         
         /// <summary>
+        /// Control d4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d4;
+        
+        /// <summary>
         /// Control d7.
         /// </summary>
         /// <remarks>
@@ -164,6 +137,15 @@ namespace UI_ClinicaDental {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button d7;
+        
+        /// <summary>
+        /// Control d3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d3;
         
         /// <summary>
         /// Control d8.
@@ -175,6 +157,15 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.WebControls.Button d8;
         
         /// <summary>
+        /// Control d2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d2;
+        
+        /// <summary>
         /// Control d9.
         /// </summary>
         /// <remarks>
@@ -182,6 +173,15 @@ namespace UI_ClinicaDental {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button d9;
+        
+        /// <summary>
+        /// Control d1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d1;
         
         /// <summary>
         /// Control d10.
@@ -202,6 +202,15 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.WebControls.Button d11;
         
         /// <summary>
+        /// Control d20.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d20;
+        
+        /// <summary>
         /// Control d12.
         /// </summary>
         /// <remarks>
@@ -209,6 +218,15 @@ namespace UI_ClinicaDental {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button d12;
+        
+        /// <summary>
+        /// Control d19.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d19;
         
         /// <summary>
         /// Control d13.
@@ -220,6 +238,15 @@ namespace UI_ClinicaDental {
         protected global::System.Web.UI.WebControls.Button d13;
         
         /// <summary>
+        /// Control d18.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d18;
+        
+        /// <summary>
         /// Control d14.
         /// </summary>
         /// <remarks>
@@ -227,6 +254,15 @@ namespace UI_ClinicaDental {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button d14;
+        
+        /// <summary>
+        /// Control d17.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button d17;
         
         /// <summary>
         /// Control d15.
@@ -245,42 +281,6 @@ namespace UI_ClinicaDental {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button d16;
-        
-        /// <summary>
-        /// Control d17.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d17;
-        
-        /// <summary>
-        /// Control d18.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d18;
-        
-        /// <summary>
-        /// Control d19.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d19;
-        
-        /// <summary>
-        /// Control d20.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button d20;
         
         /// <summary>
         /// Control Volver.

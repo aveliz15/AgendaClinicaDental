@@ -60,11 +60,13 @@ namespace UI_ClinicaDental
             {
                 divOdontogramaNiño.Visible = true;
                 MarcarDiente();
+                buscador.Visible = false;
             }
             else
             {
                 divOdontogramaAdulto.Visible = true;
                 MarcarDiente();
+                buscador.Visible = false;
             }
            
             }
