@@ -1,4 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Secretaria.Master" AutoEventWireup="true" CodeBehind="ModificarPacienteS.aspx.cs" Inherits="UI_ClinicaDental.ModificarPacienteS" %>
+﻿<%@Page Title="" Language="C#" MasterPageFile="~/Secretaria.Master" AutoEventWireup="true" CodeBehind="ModificarPacienteS.aspx.cs" Inherits="UI_ClinicaDental.ModificarPacienteS" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
    
     <link rel="stylesheet" href="estilos3.css">

@@ -21,6 +21,9 @@ namespace UI_ClinicaDental
         {
             usu = new MPaciente();
         }
+
+
+   
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,6 +31,8 @@ namespace UI_ClinicaDental
             {
                 if (!IsPostBack)
                 {
+
+               
                     divMantenimiento.Visible = false;
                     ListItem i;
                     i = new ListItem("Niño", "1");
@@ -48,7 +53,7 @@ namespace UI_ClinicaDental
             }
            
         }
-
+  
         private void MostrarMensaje(string texto)
         {
             mensaje.Visible = true;
