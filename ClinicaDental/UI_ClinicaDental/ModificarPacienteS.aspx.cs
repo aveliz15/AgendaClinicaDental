@@ -122,23 +122,46 @@ namespace UI_ClinicaDental
                 MostrarMensajeError("Ha ocurrido un error, intente mas tarde");
             }
         }
-
+        
+        public void QuitarMensajes()
+        {
+            mensaje.Visible = false;
+            mensajeError.Visible = false;
+        }
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-           int id = Convert.ToInt32(ttIdPaciente.Text);
-           Paciente u = usu.BuscarPaciente(id);
-           txtIdPaciente.Text = u.IdPaciente.ToString();
-           txtApellido1.Text = u.Apellido1;
-           txtApellido2.Text = u.Apellido2;
-           txtCorreo.Text = u.Correo;
-              
-           txtFecha.Text =  Convert.ToDateTime(u.FechaNacimiento).ToShortDateString();
-           txtNombre.Text = u.Nombre;
-           txtTelefono.Text = u.Telefono;
-           txtIdPaciente.ReadOnly = true;
-           divMantenimiento.Visible = true;
-           buscar.Visible = false;
-           txtFecha.ReadOnly = true;
+            try
+            {
+                int id = Convert.ToInt32(ttIdPaciente.Text);
+                Paciente u = usu.BuscarPaciente(id);
+                if (u == null)
+                {
+
+                    MostrarMensajeError("El paciente no existe, intente buscar de nuevo.");
+
+                }
+                else
+                {
+                    QuitarMensajes();
+                    txtIdPaciente.Text = u.IdPaciente.ToString();
+                    txtApellido1.Text = u.Apellido1;
+                    txtApellido2.Text = u.Apellido2;
+                    txtCorreo.Text = u.Correo;
+
+                    txtFecha.Text = Convert.ToDateTime(u.FechaNacimiento).ToShortDateString();
+                    txtNombre.Text = u.Nombre;
+                    txtTelefono.Text = u.Telefono;
+                    txtIdPaciente.ReadOnly = true;
+                    divMantenimiento.Visible = true;
+                    buscar.Visible = false;
+                    txtFecha.ReadOnly = true;
+                }
+
+            }
+            catch (Exception)
+            {
+                MostrarMensajeError("Hubo un error al realizar la accion solicitada, intente mas tarde por favor");
+            }
         }
     }
 }

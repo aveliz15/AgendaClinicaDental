@@ -57,14 +57,24 @@ namespace UI_ClinicaDental
             mensajeError.Visible = false;
             textoMensajeError.InnerHtml = string.Empty;
             textoMensaje.InnerHtml = texto;
+            
+            
         }
 
+        public void QuitarMensajes()
+        {
+            mensaje.Visible = false;
+            mensajeError.Visible = false;
+        }
         private void MostrarMensajeError(string texto)
         {
+           
             mensaje.Visible = false;
             mensajeError.Visible = true;
             textoMensajeError.InnerHtml = texto;
             textoMensaje.InnerHtml = string.Empty;
+           
+            
         }
 
         public void Limpiar()
@@ -107,6 +117,7 @@ namespace UI_ClinicaDental
                     IdTipoOntograma = tipo
                 };
 
+                
                 usu.ActualizarPaciente(paciente);
                 buscar.Visible = true;
                 divMantenimiento.Visible = false;
@@ -122,8 +133,19 @@ namespace UI_ClinicaDental
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
+            try
+            {
             int id = Convert.ToInt32(ttIdPaciente.Text);
             Paciente u = usu.BuscarPaciente(id);
+            if (u==null)
+            {
+               
+                     MostrarMensajeError("El paciente no existe, intente buscar de nuevo.");
+  
+            }
+            else
+            {
+            QuitarMensajes();
             txtIdPaciente.Text = u.IdPaciente.ToString();
             txtApellido1.Text = u.Apellido1;
             txtApellido2.Text = u.Apellido2;
@@ -136,6 +158,13 @@ namespace UI_ClinicaDental
             divMantenimiento.Visible = true;
             buscar.Visible = false;
             txtFecha.ReadOnly = true;
+            }
+           
+            }
+            catch (Exception)
+            {
+                MostrarMensajeError("Hubo un error al realizar la accion solicitada, intente mas tarde por favor");
+            } 
         }
     }
 }

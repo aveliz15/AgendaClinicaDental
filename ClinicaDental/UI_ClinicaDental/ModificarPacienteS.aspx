@@ -3,40 +3,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
    
-    <link rel="stylesheet" href="estilos3.css">
- <!--   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+     <link rel="stylesheet" href="estilos3.css">
     
-    <script>
-
-        $(document).ready(function () {
-    $('#tblPacientes').DataTable();
-        });
-
-    </script>
-
-
-    <table runat="server" id="tblPacientes" class="display">
-    <thead>
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-        </tr>
-    </tbody>
-</table>
-    -->
-    <h2 style="color: black">Modificar datos del paciente</h2>
-    
+    <br />
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -47,13 +16,18 @@
         <strong id="textoMensajeError" runat="server"></strong>
     </div>
 
+    <h2 style="color: black">Busqueda de pacientes</h2>
+    <br />
     <div id="buscar" class="form-inline" runat="server">
-      <asp:TextBox ID="ttIdPaciente" runat="server"  Width="300px" TextMode="Number" CssClass="form-control" ></asp:TextBox>
+      <asp:TextBox ID="ttIdPaciente" runat="server"  Width="300px" TextMode="Number" CssClass="form-control" PlaceHolder="Ingrese ID del paciente:"></asp:TextBox>
          <asp:Button Text="Buscar" runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
         </div>
 
+    <div align="center">
+    
     <div class="form-line" id="divMantenimiento" runat="server">
-
+     <h2 style="color: black">Modificar datos del paciente</h2>
+        <br />
     <div class="form-group">
       <asp:Label ID="lbIdPaciente" ForeColor="black" runat="server" Text="ID Paciente: "></asp:Label>
         <asp:TextBox ID="txtIdPaciente" runat="server" CssClass="form-control"></asp:TextBox>
@@ -135,8 +109,8 @@
        
             </div>
         </div>
+        </div>
         <br />
        
     
-          
 </asp:Content>

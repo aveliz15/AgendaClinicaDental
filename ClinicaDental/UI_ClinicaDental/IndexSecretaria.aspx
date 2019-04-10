@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Secretaria.Master" AutoEventWireup="true" CodeBehind="IndexSecretaria.aspx.cs" Inherits="UI_ClinicaDental.IndexSecretaria" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-
+    <br />
+<div style="margin-left:25px; color:red">
+<asp:Label ID="LBUsuariotext" runat="server" Text="Conectado como: ">
+</asp:Label><asp:Label ID="LblUsuario" runat="server" Text=""></asp:Label>
+</div>
     <link href="Content/Botones.css" rel="stylesheet" type="text/css" />
 
    
