@@ -10,6 +10,6 @@
 namespace UI_ClinicaDental {
     
     
-    public partial class _Default {
+    public partial class DiagnosticoS {
     }
 }

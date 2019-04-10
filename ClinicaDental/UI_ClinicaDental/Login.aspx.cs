@@ -62,6 +62,7 @@ namespace UI_ClinicaDental
                          Session["usuario"] = admin.Nombre;
                          Session["id"] = admin.IdUsuario;
                          Session["contra"] = Encriptacion.Decriptar(admin.Clave);
+                         Session["rol"] = admin.IdRol;
                         
                          if (admin.IdRol == 0)
                          {

@@ -53,16 +53,16 @@
                     <ul class="nav navbar-nav">
                         
                         
-                        <li><a runat="server" style="color:white" href="~/Usuarios">Usuarios</a></li>
-                        <li><a runat="server" style="color:white" href="~/Pacientes">Pacientes</a></li>
-                        <li><a runat="server" style="color:white" href="~/Diagnosticos">Diagnosticos</a></li>
+                        <li><a runat="server" style="color:white" href="~/IndexAdminUsuarios">Usuarios</a></li>
+                        <li><a runat="server" style="color:white" href="~/IndexPacientesD">Pacientes</a></li>
+                        <li><a runat="server" style="color:white" href="~/Diagnostico">Diagnosticos</a></li>
                         <li><a runat="server" style="color:white" href="~/Citas">Citas</a></li>
                         <li><a runat="server" style="color:white" href="~/Reportes">Reportes</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                 <li><a runat="server" class="btn btn-primary" style="color:white" href="~/ModificarUsuario">Mi cuenta</a></li>
+                                 <%--<li><a runat="server" class="btn btn-primary" style="color:white" href="~/ModificarUsuario">Mi cuenta</a></li>--%>
                                <li><a runat="server" class="btn btn-primary" style="color:white" href="~/Login">Salir</a></li>
                             
                             </ul>
@@ -84,7 +84,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-          &nbsp; &nbsp;      <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+        
             </footer>
         </div>
     </form>

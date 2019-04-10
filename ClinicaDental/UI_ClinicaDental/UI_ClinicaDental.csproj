@@ -168,14 +168,29 @@
     <Content Include="BuscarUsuario.aspx" />
     <Content Include="CambiarClave.aspx" />
     <Content Include="Citas.aspx" />
+    <Content Include="Content\Botones.css" />
     <Content Include="Content\Estilos.css" />
     <Content Include="Diagnostico.aspx" />
+    <Content Include="DiagnosticoS.aspx" />
+    <Content Include="Iconos\agregarPersona.png" />
+    <Content Include="Iconos\cita.png" />
+    <Content Include="Iconos\diagnostico.png" />
+    <Content Include="Iconos\editarPersona.png" />
+    <Content Include="Iconos\perfil.png" />
+    <Content Include="Iconos\reporte.png" />
+    <Content Include="Iconos\paciente.png" />
+    <Content Include="Iconos\usuario.png" />
     <Content Include="Imagenes\fondo.jpg" />
+    <Content Include="IndexAdminUsuarios.aspx" />
+    <Content Include="IndexCitasS.aspx" />
+    <Content Include="IndexPacientesD.aspx" />
+    <Content Include="IndexPacientesS.aspx" />
     <Content Include="IndexSecretaria.aspx" />
     <Content Include="InsertarPacienteD.aspx" />
     <Content Include="InsertarPacienteS.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ModificarPacienteD.aspx" />
     <Content Include="ModificarPacienteS.aspx" />
     <Content Include="ModificarUsuario.aspx" />
     <Content Include="RecuperarPassword.aspx" />
@@ -228,7 +243,6 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Diagnosticos.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Dentista.Master" />
@@ -311,7 +325,42 @@
     <Compile Include="Diagnostico.aspx.designer.cs">
       <DependentUpon>Diagnostico.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DiagnosticoS.aspx.cs">
+      <DependentUpon>DiagnosticoS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiagnosticoS.aspx.designer.cs">
+      <DependentUpon>DiagnosticoS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Encriptacion.cs" />
+    <Compile Include="IndexAdminUsuarios.aspx.cs">
+      <DependentUpon>IndexAdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexAdminUsuarios.aspx.designer.cs">
+      <DependentUpon>IndexAdminUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCitasS.aspx.cs">
+      <DependentUpon>IndexCitasS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexCitasS.aspx.designer.cs">
+      <DependentUpon>IndexCitasS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexPacientesD.aspx.cs">
+      <DependentUpon>IndexPacientesD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexPacientesD.aspx.designer.cs">
+      <DependentUpon>IndexPacientesD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexPacientesS.aspx.cs">
+      <DependentUpon>IndexPacientesS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexPacientesS.aspx.designer.cs">
+      <DependentUpon>IndexPacientesS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="IndexSecretaria.aspx.cs">
       <DependentUpon>IndexSecretaria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -346,6 +395,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPacienteD.aspx.cs">
+      <DependentUpon>ModificarPacienteD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPacienteD.aspx.designer.cs">
+      <DependentUpon>ModificarPacienteD.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarPacienteS.aspx.cs">
       <DependentUpon>ModificarPacienteS.aspx</DependentUpon>
@@ -397,13 +453,6 @@
     </Compile>
     <Compile Include="Pacientes.aspx.designer.cs">
       <DependentUpon>Pacientes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Diagnosticos.aspx.cs">
-      <DependentUpon>Diagnosticos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Diagnosticos.aspx.designer.cs">
-      <DependentUpon>Diagnosticos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

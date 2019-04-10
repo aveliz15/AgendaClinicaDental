@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace UI_ClinicaDental
 {
-    public partial class _Default : Page
+    public partial class DiagnosticoS : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

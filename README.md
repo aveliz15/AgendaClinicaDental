@@ -1,8 +1,8 @@
-Agenda Virtual Dental
+## **Agenda Virtual Dental**
 
 El proyecto consiste en una agenda Virtual Web para una clinica dental con modulos de Administración de Usuarios,Agenda de Citas,Odontograma,Perfiles de Pacientes,Reportes.
 
-Comenzando 🚀
+### **Comenzando 🚀**
 
 Descargar el repositorio de Github.
 Usar visualizador de codigo c#.
@@ -10,25 +10,30 @@ Ulizar SQL server 2016 para gestionar la Base de Datos.
 Restaurar la base de datos
 Cambiar los el nombre de la PC en los connection Strings
 
-Pre-requisitos 📋
-
-Instalación 🔧
-
-Construido con 🛠️
-
-Visual Studio 2016
-
+### **Pre-requisitos 📋**
 Sql Server 2016
+Editor de código C#
+Navegador Web para visualizar el sistema en ejecución
 
-Bootsrap 4
+### **Instalación 🔧**
+Clonar el proyecto de github,Crear la base de datos "BDClinicaDental", luego ejecutar el script más actualizado de la base de datos.
+Por ultimo abrir el proyecto preferiblemente en Visual Studio o algún editor de código C#
 
-.NetFramework 4.5
+### **Construido con 🛠️**
 
-Versionado 📌
+* Visual Studio 2016
+
+* Sql Server 2016
+
+* Bootsrap 4
+
+* .NetFramework 4.5
+
+### **Versionado 📌**
 
 Change Significance
 
-Autores ✒️
+### **Autores ✒️**
 
 Jose Acuña Arrieta
 
