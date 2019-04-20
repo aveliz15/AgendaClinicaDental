@@ -18,3 +18,4 @@ C:\Users\Chiky\Desktop\AgendaVirtual\UI\bin\ServiceStack.Text.xml
 C:\Users\Chiky\Desktop\AgendaVirtual\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 C:\Users\Chiky\Desktop\AgendaVirtual\UI\obj\Debug\UI.dll
 C:\Users\Chiky\Desktop\AgendaVirtual\UI\obj\Debug\UI.pdb
+C:\Users\Chiky\Desktop\Github2\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
