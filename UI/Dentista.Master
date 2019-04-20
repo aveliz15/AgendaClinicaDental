@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dentista.master.cs" Inherits="UI.Dentista" %>
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Clinica Dental</title>
+    <script src="scripts/jquery-1.10.2.intellisense.js"></script>
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/modernizr-2.6.2.js"></script>
+    <script src="scripts/respond.js"></script>
+    <script src="scripts/respond.min.js"></script>
+     <link href="css/bootstrap.css" rel="stylesheet" />
+     <link href="css/bootstrap.min.css" rel="stylesheet" />
+     <link href="css/Botones.css" rel="stylesheet" />
+     <link href="css/Estilos.css" rel="stylesheet" />
+     <link href="css/Site.css" rel="stylesheet" />
+    <%--<asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>--%>
+    <%--</asp:PlaceHolder>--%>
+    <%--<webopt:bundlereference runat="server" path="~/Content/css" />--%>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+       
+
+        <div class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="color:white" runat="server" href="~/IndexDentista.aspx">Logo</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        
+                        
+                        <li><a runat="server" style="color:white" href="~/IndexAdminUsuarios.aspx">Usuarios</a></li>
+                        <li><a runat="server" style="color:white" href="~/IndexPacientesD.aspx">Pacientes</a></li>
+                        <li><a runat="server" style="color:white" href="~/Diagnostico.aspx">Diagnosticos</a></li>
+                        <li><a runat="server" style="color:white" href="~/Citass.aspx">Citas</a></li>
+                        <li><a runat="server" style="color:white" href="~/Reportes.aspx">Reportes</a></li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                 <%--<li><a runat="server" class="btn btn-primary" style="color:white" href="~/ModificarUsuario">Mi cuenta</a></li>--%>
+                               <li><a runat="server" class="btn btn-primary" style="color:white" href="~/Login.aspx">Salir</a></li>
+                            
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <%--<li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>--%>
+                                <li>
+                                    <%--<asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />--%>
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+        
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
