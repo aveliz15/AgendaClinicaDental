@@ -39,3 +39,4 @@ C:\Users\joseA\Desktop\AgendaClinicaDental\DATOS_ClinicaDental\obj\Debug\DATOS_C
 C:\Users\joseA\Desktop\AgendaClinicaDental\DATOS_ClinicaDental\obj\Debug\DATOS_ClinicaDental.dll
 C:\Users\joseA\Desktop\AgendaClinicaDental\DATOS_ClinicaDental\obj\Debug\DATOS_ClinicaDental.pdb
 C:\Users\joseA\Desktop\AgendaClinicaDental\DATOS_ClinicaDental\bin\Debug\SimpleCrypto.dll
+C:\Users\Chiky\Desktop\Github2\DATOS_ClinicaDental\bin\Debug\SimpleCrypto.dll

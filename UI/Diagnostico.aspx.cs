@@ -81,7 +81,7 @@ namespace UI
         {
             try
             {
-
+                QuitarMensajes();
                 LimpiarDiente();
                 divOdontogramaNiño.Visible = false;
                 divOdontogramaAdulto.Visible = false;

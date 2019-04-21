@@ -47,3 +47,4 @@ C:\Users\joseA\Desktop\AgendaClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_Clini
 C:\Users\joseA\Desktop\AgendaClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_ClinicaDental.dll
 C:\Users\joseA\Desktop\AgendaClinicaDental\BLL_ClinicaDental\obj\Debug\BLL_ClinicaDental.pdb
 C:\Users\joseA\Desktop\AgendaClinicaDental\BLL_ClinicaDental\bin\Debug\SimpleCrypto.dll
+C:\Users\Chiky\Desktop\Github2\BLL_ClinicaDental\bin\Debug\SimpleCrypto.dll

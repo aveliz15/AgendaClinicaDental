@@ -80,6 +80,7 @@
     <Content Include="BuscarUsuario.aspx" />
     <Content Include="CambiarClave.aspx" />
     <Content Include="Citass.aspx" />
+    <Content Include="CitassS.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\Botones.css" />
@@ -88,6 +89,38 @@
     <Content Include="Diagnostico.aspx" />
     <Content Include="DiagnosticoS.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Iconos\64px\x64-aceptar.png" />
+    <Content Include="Iconos\64px\x64-aceptar_azul.png" />
+    <Content Include="Iconos\64px\x64-actualizar.png" />
+    <Content Include="Iconos\64px\x64-add.png" />
+    <Content Include="Iconos\64px\x64-addUser.png" />
+    <Content Include="Iconos\64px\x64-add_azul.png" />
+    <Content Include="Iconos\64px\x64-atras.png" />
+    <Content Include="Iconos\64px\x64-atras_azul.png" />
+    <Content Include="Iconos\64px\x64-ayuda.png" />
+    <Content Include="Iconos\64px\x64-borrar_usua.png" />
+    <Content Include="Iconos\64px\x64-buscar.png" />
+    <Content Include="Iconos\64px\x64-calendario.png" />
+    <Content Include="Iconos\64px\x64-cancelar.png" />
+    <Content Include="Iconos\64px\x64-cancelar_azul.png" />
+    <Content Include="Iconos\64px\x64-clientes.png" />
+    <Content Include="Iconos\64px\x64-config.png" />
+    <Content Include="Iconos\64px\x64-config2.png" />
+    <Content Include="Iconos\64px\x64-descarga.png" />
+    <Content Include="Iconos\64px\x64-editar_doc.png" />
+    <Content Include="Iconos\64px\x64-folder.png" />
+    <Content Include="Iconos\64px\x64-frame.png" />
+    <Content Include="Iconos\64px\x64-grafica.png" />
+    <Content Include="Iconos\64px\x64-guardar.png" />
+    <Content Include="Iconos\64px\x64-imprimir.png" />
+    <Content Include="Iconos\64px\x64-inicio.png" />
+    <Content Include="Iconos\64px\x64-limpiar.png" />
+    <Content Include="Iconos\64px\x64-mail.png" />
+    <Content Include="Iconos\64px\x64-menos.png" />
+    <Content Include="Iconos\64px\x64-menos_azul.png" />
+    <Content Include="Iconos\64px\x64-reporte.png" />
+    <Content Include="Iconos\64px\x64-salir.png" />
+    <Content Include="Iconos\64px\x64-usuario.png" />
     <Content Include="Iconos\agregarPersona.png" />
     <Content Include="Iconos\cita.png" />
     <Content Include="Iconos\diagnostico.png" />
@@ -204,6 +237,13 @@
     </Compile>
     <Compile Include="Citass.aspx.designer.cs">
       <DependentUpon>Citass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitassS.aspx.cs">
+      <DependentUpon>CitassS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitassS.aspx.designer.cs">
+      <DependentUpon>CitassS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dentista.Master.cs">
       <DependentUpon>Dentista.Master</DependentUpon>
