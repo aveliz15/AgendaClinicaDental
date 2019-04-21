@@ -33,7 +33,8 @@ namespace UI_ClinicaDental
             GV1.DataBind();
             GV1.HeaderRow.Cells[6].Visible = false;
             GV1.HeaderRow.Cells[0].Text = "ID Usuario";
-            GV1.HeaderRow.Cells[2].Text = "Primer apellido"; 
+                GV1.HeaderRow.Cells[1].Text = "Nombre";
+                GV1.HeaderRow.Cells[2].Text = "Primer apellido"; 
                 GV1.HeaderRow.Cells[3].Text = "Segundo apellido";
                 GV1.HeaderRow.Cells[5].Text = "ID Rol";
                 GV1.HeaderRow.Cells[7].Text = "Correo";

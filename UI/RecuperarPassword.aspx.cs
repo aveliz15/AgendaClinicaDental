@@ -46,8 +46,10 @@ namespace UI_ClinicaDental
         }
         protected void btnRecuperar_Click(object sender, EventArgs e)
         {
+           
+           
             int usuario = Convert.ToInt32(txtUsuario.Text.Trim());
-
+           
             Usuario c = usu.BuscarUsuario(usuario);
 
             if (c != null)
@@ -74,6 +76,7 @@ namespace UI_ClinicaDental
             {
                 MostrarMensajeError("El usuario no existe");
             }
+
         }
 
        protected void EnviarEmail(string EnviarA , string contraseniaRecuperar)

@@ -3,6 +3,20 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
    
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script>
+    $(function () {
+    $(".gvv").prepend( $("<thead></thead>").append( $(this).find("tr:first") ) ).dataTable();
+});
+</script>
+
+    <script>
+         
+        $(document).ready(function () {
+    $('#GV1').DataTable();
+        });
+       </script>
      <link rel="stylesheet" href="estilos3.css">
     
     <br />
@@ -23,6 +37,14 @@
         <br />
       <asp:TextBox ID="ttIdPaciente" runat="server"  Width="300px" TextMode="Number" CssClass="form-control" PlaceHolder="Ingrese ID del paciente:"></asp:TextBox>
          <asp:Button Text="Buscar" runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
+        </div>
+
+      <br />
+          <div id="gridview" runat="server">
+    <asp:GridView ID="GV1"  runat="server" CssClass="gvv" >
+     
+       
+    </asp:GridView>
         </div>
 
     <div align="center">

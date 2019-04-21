@@ -22,8 +22,8 @@ namespace UI_ClinicaDental
             usu = new MPaciente();
         }
 
+        public List<Paciente> lista;
 
-   
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -41,8 +41,24 @@ namespace UI_ClinicaDental
                     DDLTipoOntograma.Items.Add(i);
                     //int admin = Convert.ToInt32(Session["id"]);                   
 
-                  
-                    
+                    lista = usu.ListarPacientes();
+                    GV1.DataSource = lista;
+                    GV1.DataBind();
+                    GV1.HeaderRow.Cells[7].Visible = false;
+                    GV1.HeaderRow.Cells[0].Text = "ID Paciente";
+                    GV1.HeaderRow.Cells[1].Text = "Nombre";
+                    GV1.HeaderRow.Cells[2].Text = "Primer apellido";
+                    GV1.HeaderRow.Cells[3].Text = "Segundo apellido";
+                    GV1.HeaderRow.Cells[4].Text = "Telefono";
+                    GV1.HeaderRow.Cells[5].Text = "Correo";
+                    GV1.HeaderRow.Cells[6].Text = "Fecha de Naciemiento";
+
+                    for (int w = 0; w < GV1.Rows.Count; w++)
+                    {
+                        GV1.Rows[w].Cells[7].Visible = false;
+                    }
+
+
 
                 }
             }
@@ -115,6 +131,7 @@ namespace UI_ClinicaDental
                 divMantenimiento.Visible = false;
                 MostrarMensaje("Paciente modificado con éxito");
                 ttIdPaciente.Text = String.Empty;
+                gridview.Visible = true;
             }
             catch (Exception)
             {
@@ -155,6 +172,7 @@ namespace UI_ClinicaDental
                     divMantenimiento.Visible = true;
                     buscar.Visible = false;
                     txtFecha.ReadOnly = true;
+                    gridview.Visible = false;
                 }
 
             }

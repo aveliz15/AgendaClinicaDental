@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LoginDentista.Master" AutoEventWireup="true" CodeBehind="RecuperarPassword.aspx.cs" Inherits="UI_ClinicaDental.RecuperarPassword" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Login.Master" AutoEventWireup="true" CodeBehind="RecuperarPassword.aspx.cs" Inherits="UI_ClinicaDental.RecuperarPassword" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
