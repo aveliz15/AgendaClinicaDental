@@ -50,7 +50,7 @@
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                  <%--<li><a runat="server" class="btn btn-primary" style="color:white" href="~/ModificarUsuario">Mi cuenta</a></li>--%>
-                               <li><a runat="server" class="btn btn-primary" style="color:white" href="~/Login.aspx">Salir</a></li>
+                               <%--<li><a runat="server" class="btn btn-primary" style="color:white" href="~/Login.aspx">Salir</a></li>--%>
                             
                             </ul>
                         </AnonymousTemplate>

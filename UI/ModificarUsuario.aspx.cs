@@ -112,7 +112,7 @@ namespace UI_ClinicaDental
 
         protected void btnCambiarClave_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/CambiarClave");
+            Response.Redirect("~/CambiarClave.aspx");
         }
     }
 }
