@@ -16,7 +16,7 @@
         });
 
     </script>
-     <h2 style="color:black">Busqueda de usuarios</h2>
+     <h2 style="color:black">Búsqueda de usuarios</h2>
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -27,7 +27,9 @@
     </div>
     <div id="buscar" class="form-inline" runat="server">
       <asp:TextBox ID="txtIdCliente" runat="server" placeholder="ID usuario:" Width="300px" TextMode="Number" CssClass="form-control" ></asp:TextBox>
-         <asp:Button Text="Buscar" runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
+         <asp:Button Text="Buscar"   runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
+        
+             
         </div>
     <br />
     <br />

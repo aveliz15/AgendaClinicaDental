@@ -33,7 +33,7 @@
    
     <br />
     <div id="buscar" class="form-inline" runat="server">
-         <h2 style="color: black">Busqueda de pacientes</h2>
+         <h2 style="color: black">Búsqueda de pacientes</h2>
         <br />
       <asp:TextBox ID="ttIdPaciente" runat="server"  Width="300px" TextMode="Number" CssClass="form-control" PlaceHolder="Ingrese ID del paciente:"></asp:TextBox>
          <asp:Button Text="Buscar" runat="server" ID="btnBuscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
@@ -122,7 +122,7 @@
                             </asp:RequiredFieldValidator> 
            <br />
         <div class="form-group">
-        <asp:Label ID="lbTipoOntograma" ForeColor="black" runat="server" Text="Tipo de ontograma: "></asp:Label>
+        <asp:Label ID="lbTipoOntograma" ForeColor="black" runat="server" Text="Tipo de odontograma: "></asp:Label>
        <asp:DropDownList ID="DDLTipoOntograma" CssClass="form-control" Width="280px" runat="server"></asp:DropDownList>
              
         </div>

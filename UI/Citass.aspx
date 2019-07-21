@@ -8,7 +8,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" style="color:white" runat="server" href="~/IndexDentista">Logo</a>
+                    <a class="navbar-brand" style="color:white" runat="server" href="~/IndexDentista.aspx">Logo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">

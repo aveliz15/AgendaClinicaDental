@@ -53,3 +53,4 @@ C:\Users\Chiky\Desktop\Github\DATOS_ClinicaDental\bin\Debug\ServiceStack.Interfa
 C:\Users\Chiky\Desktop\Github\DATOS_ClinicaDental\bin\Debug\ServiceStack.Text.xml
 C:\Users\Chiky\Desktop\Github\DATOS_ClinicaDental\obj\Debug\DATOS_ClinicaDental.dll
 C:\Users\Chiky\Desktop\Github\DATOS_ClinicaDental\obj\Debug\DATOS_ClinicaDental.pdb
+C:\Users\Chiky\Desktop\Github\DATOS_ClinicaDental\obj\Debug\DATOS_ClinicaDental.csprojResolveAssemblyReference.cache

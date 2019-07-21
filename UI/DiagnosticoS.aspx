@@ -45,9 +45,14 @@
     <div id="divOdontogramaNiño" runat="server" style="float: left">
         <h2 id="tituloPaciente" runat="server">Paciente: </h2>
 
-
-        <div id="arriba" style="background-color: pink; width: 260px">
-
+        <div id="arribayabajo1" style="width:270px;
+ border-top: 4px solid #B00E0E;
+ border-bottom: 4px solid #B00E0E;
+ border-radius: 40px;
+ box-shadow: 0px 10px 13px -7px #000000, 0px 5px 15px 5px rgba(0,0,0,0);
+  ">
+        <div id="arriba" style="width: 260px">
+            <br />
             <div style="margin-left: 83px">
                 <asp:Button ID="d5" runat="server" Width="44px" Text="5" CssClass="btn btn-success" OnClick="d5_Click" ForeColor="Black" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
 
@@ -78,7 +83,7 @@
 
         </div>
         <br />
-        <div id="abajo" style="background-color: pink; width: 260px">
+        <div id="abajo" style="width: 260px">
 
             <div style="margin-left: 10px">
                 <asp:Button ID="d11" runat="server" Width="44px" Text="11" OnClick="d11_Click" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
@@ -109,9 +114,9 @@
                 </div>
 
             </div>
-
+            <br />
         </div>
-
+             </div>
 
 
         <br />
@@ -128,17 +133,15 @@
             <ItemTemplate>
                 <div style="width: 445px; float: left; border-style: outset; border-color: darkgray;">
 
-                    <strong>
-                    <p style="color: black">
-                        ID Paciente: <%#Item.IdPaciente %>
+                     <p style="color: black;font-family:Arial;font-style:italic">
+                        <strong>   ID Paciente: </strong> <%#Item.IdPaciente %> 
                         <br />
-                        # Diente:       <%#Item.IdDiente %>
+                      <strong>    Diente: </strong>         <%#Item.IdDiente %>
                         <br />
-                        Detalle: <%# Item.Detalle %>
+                      <strong>    Detalle: </strong>   <%# Item.Detalle %>
                         <br />
-                        Fecha: <%# Item.Fecha %>
+                       <strong>    Fecha: </strong>   <%#Item.Fecha.ToShortDateString()%>
                     <p />
-                    <strong />
                 </div>
             </ItemTemplate>
 
@@ -162,98 +165,107 @@
             </Fields>
         </asp:DataPager>
 
-        <asp:Button Text="Agregar Diagnostico" Style="float: right" runat="server" ID="btnAgregar" CssClass="btn btn-success" OnClick="btnAgregar_Click" />
+        <asp:Button Text="Agregar diagnostico" Style="float: right" runat="server" ID="btnAgregar" CssClass="btn btn-success" OnClick="btnAgregar_Click" />
     </div>
     
 
 
     <div id="divOdontogramaAdulto" runat="server" style="float: left">
         <h2 id="tituloPaciente2" runat="server">Paciente: </h2>
-        <div id="arriba2" style="background-color: pink; width: 380px">
-
-
-            <center>
-            <asp:Button ID="d27" runat="server" Width="44px" Text="27" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d27_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-            <asp:Button ID="d28" runat="server" Width="44px" Text="28" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d28_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
-      
-            <asp:Button ID="d29" runat="server" Width="44px" Text="29" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d29_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
         
-            <asp:Button ID="d30" runat="server" Width="44px" Text="30" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d30_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
+         <div id="arribayabajo2" style="width:380px;
+ border-top: 4px solid #B00E0E;
+ border-bottom: 4px solid #B00E0E;
+ border-radius: 40px;
+ box-shadow: 0px 10px 13px -7px #000000, 0px 5px 15px 5px rgba(0,0,0,0);
+  ">
+        <div id="arriba2" style="width: 380px">
+
+            <br />
+            <center>
+            <asp:Button ID="d27" runat="server" Width="40px" Text="27" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d27_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
+            <asp:Button ID="d28" runat="server" Width="40px" Text="28" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d28_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
+      
+            <asp:Button ID="d29" runat="server" Width="40px" Text="29" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d29_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
+        
+            <asp:Button ID="d30" runat="server" Width="40px" Text="30" CssClass="btn btn-success"   ForeColor="Black" BackColor="White" OnClick="d30_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"/>
          </center>
 
             <div style="margin-left: 75px">
-                <asp:Button ID="d26" runat="server" Width="44px" Text="26" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d26_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d26" runat="server" Width="40px" Text="26" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d26_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <asp:Button ID="d31" runat="server" Width="44px" Text="31" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d31_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d31" runat="server" Width="40px" Text="31" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d31_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 55px">
-                <asp:Button ID="d25" runat="server" Width="44px" Text="25" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d25_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d25" runat="server" Width="40px" Text="25" CssClass="btn btn-success" ForeColor="Black" BackColor="White" OnClick="d25_Click" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="d32" runat="server" Width="44px" Text="32" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d32_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d32" runat="server" Width="40px" Text="32" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d32_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 45px">
-                <asp:Button ID="d24" runat="server" Width="44px" Text="24" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d24_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d24" runat="server" Width="40px" Text="24" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d24_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="d33" runat="server" Width="44px" Text="33" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d33_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d33" runat="server" Width="40px" Text="33" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d33_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 35px">
-                <asp:Button ID="d23" runat="server" Width="44px" Text="23" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d23_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d23" runat="server" Width="40px" Text="23" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d23_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="d34" runat="server" Width="44px" Text="34" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d34_Click" BorderStyle="Solid" BorderWidth="1px" />
+                    <asp:Button ID="d34" runat="server" Width="40px" Text="34" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d34_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 30px">
-                <asp:Button ID="d22" runat="server" Width="44px" Text="22" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d22_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d22" runat="server" Width="40px" Text="22" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d22_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="d35" runat="server" Width="44px" Text="35" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d35_Click" BorderStyle="Solid" BorderWidth="1px" />
+                    <asp:Button ID="d35" runat="server" Width="40px" Text="35" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d35_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 25px">
-                <asp:Button ID="d21" runat="server" Width="44px" Text="21" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d21_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d21" runat="server" Width="40px" Text="21" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d21_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="d36" runat="server" Width="44px" Text="36" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d36_Click" BorderStyle="Solid" BorderWidth="1px" />
+                    <asp:Button ID="d36" runat="server" Width="40px" Text="36" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d36_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
         </div>
         <br />
 
-        <div id="abajo2" style="background-color: pink; width: 380px">
+        <div id="abajo2" style="width: 380px">
 
 
             <div style="margin-left: 25px">
-                <asp:Button ID="d52" runat="server" Width="44px" Text="52" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d52_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d52" runat="server" Width="40px" Text="52" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d52_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="d37" runat="server" Width="44px" Text="37" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d37_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d37" runat="server" Width="40px" Text="37" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d37_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 30px">
-                <asp:Button ID="d51" runat="server" Width="44px" Text="51" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d51_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d51" runat="server" Width="40px" Text="51" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d51_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:Button ID="d38" runat="server" Width="44px" Text="38" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d38_Click" BorderStyle="Solid" BorderWidth="1px" />
+                   <asp:Button ID="d38" runat="server" Width="40px" Text="38" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d38_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 35px">
-                <asp:Button ID="d50" runat="server" Width="44px" Text="50" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d50_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d50" runat="server" Width="40px" Text="50" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d50_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="d39" runat="server" Width="44px" Text="39" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d39_Click" BorderStyle="Solid" BorderWidth="1px" />
+                    <asp:Button ID="d39" runat="server" Width="40px" Text="39" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d39_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 45px">
-                <asp:Button ID="d49" runat="server" Width="44px" Text="49" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d49_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d49" runat="server" Width="40px" Text="49" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d49_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <asp:Button ID="d40" runat="server" Width="44px" Text="40" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d40_Click" BorderStyle="Solid" BorderWidth="1px" />
+       <asp:Button ID="d40" runat="server" Width="40px" Text="40" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d40_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 55px">
-                <asp:Button ID="d48" runat="server" Width="44px" Text="48" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d48_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d48" runat="server" Width="40px" Text="48" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d48_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="d41" runat="server" Width="44px" Text="41" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d41_Click" BorderStyle="Solid" BorderWidth="1px" />
+            <asp:Button ID="d41" runat="server" Width="40px" Text="41" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d41_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <div style="margin-left: 75px">
-                <asp:Button ID="d47" runat="server" Width="44px" Text="47" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d47_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d47" runat="server" Width="40px" Text="47" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d47_Click" BorderStyle="Solid" BorderWidth="1px" />
                 &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <asp:Button ID="d42" runat="server" Width="44px" Text="42" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d42_Click" BorderStyle="Solid" BorderWidth="1px" />
+                <asp:Button ID="d42" runat="server" Width="40px" Text="42" CssClass="btn btn-success" ForeColor="Black" BackColor="White" BorderColor="Black" OnClick="d42_Click" BorderStyle="Solid" BorderWidth="1px" />
             </div>
             <center>
-                 <asp:Button ID="d46" runat="server" Width="44px" Text="46" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d46_Click" BorderStyle="Solid" BorderWidth="1px"/>
-     <asp:Button ID="d45" runat="server" Width="44px" Text="45" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" OnClick="d45_Click" BorderWidth="1px"/>
-                <asp:Button ID="d44" runat="server" Width="44px" Text="44" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d44_Click" BorderStyle="Solid" BorderWidth="1px"/>
-                <asp:Button ID="d43" runat="server" Width="44px" Text="43" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d43_Click" BorderStyle="Solid" BorderWidth="1px"/>
+                 <asp:Button ID="d46" runat="server" Width="40px" Text="46" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d46_Click" BorderStyle="Solid" BorderWidth="1px"/>
+     <asp:Button ID="d45" runat="server" Width="40px" Text="45" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" BorderStyle="Solid" OnClick="d45_Click" BorderWidth="1px"/>
+                <asp:Button ID="d44" runat="server" Width="40px" Text="44" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d44_Click" BorderStyle="Solid" BorderWidth="1px"/>
+                <asp:Button ID="d43" runat="server" Width="40px" Text="43" CssClass="btn btn-success"   ForeColor="Black" BackColor="White"  BorderColor="Black" OnClick="d43_Click" BorderStyle="Solid" BorderWidth="1px"/>
      </center>
+            <br />
         </div>
+             </div>
 
         <br />
         <asp:Button Text="Volver" runat="server" ID="Volver2" CssClass="btn btn-warning" OnClick="Volver2_Click" />
@@ -261,8 +273,8 @@
 
     <div id="divMantenimientoDiag" runat="server" style="width: 450px; float: right; margin-right: 100px;">
         <br />
-        <h2>Agregar Diagnostico
-            <img src="" style="max-height: 70px; max-width: 70px">
+        <h2>Agregar diagnóstico
+           <img src="Iconos/add.png" style="max-height: 40px; max-width: 40px">
         </h2>
 
         <br />

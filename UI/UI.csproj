@@ -129,6 +129,9 @@
     <Content Include="Iconos\perfil.png" />
     <Content Include="Iconos\reporte.png" />
     <Content Include="Iconos\usuario.png" />
+    <Content Include="Iconos\addUser.png" />
+    <Content Include="Iconos\add.png" />
+    <Content Include="Iconos\salir.png" />
     <Content Include="IndexAdminUsuarios.aspx" />
     <Content Include="IndexDentista.aspx" />
     <Content Include="IndexPacientesD.aspx" />
@@ -153,6 +156,7 @@
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Secretaria.Master" />
     <Content Include="Login.Master" />
+    <Content Include="Iconos\buscar.png" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -3,7 +3,7 @@
 
     <link rel="stylesheet" href="estilos3.css">
 
-    <h2 style="color: black">Modificar datos del usuario</h2>
+    
     
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
@@ -16,8 +16,9 @@
     </div>
 
 
-    <div class="form-line" id="divMantenimiento" runat="server">
-
+    <div align="center" class="form-line" id="divMantenimiento" runat="server">
+    <h2 style="color: black">Modificar datos</h2>
+        <br />
     <div class="form-group">
       <asp:Label ID="lbIdUsuario" ForeColor="black" runat="server" Text="ID Usuario: "></asp:Label>
         <asp:TextBox ID="txtIdUsuario" runat="server" CssClass="form-control"></asp:TextBox>
@@ -59,7 +60,7 @@
         </div>
 
         <div class="form-group">
-            <asp:Label ID="lbDireccion" ForeColor="black" runat="server" Text="Direccion: "></asp:Label>
+            <asp:Label ID="lbDireccion" ForeColor="black" runat="server" Text="Dirección: "></asp:Label>
             <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" ></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
                 ControlToValidate="txtDireccion"
@@ -88,7 +89,7 @@
         </div>
         </div>
         <br />
-        <div class="form-horizontal">
+        <div align="center" class="form-horizontal">
             <asp:Button Text="Modificar" runat="server" ID="btnModificar" CssClass="btn btn-success" OnClick="btnModificar_Click" />
             
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button Text="Cambiar clave" OnClick="btnCambiarClave_Click" runat="server" ID="btnCambiarClave" CssClass="btn btn-primary" />

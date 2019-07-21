@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="Content/Botones.css" rel="stylesheet" type="text/css" />
-
-   <h2>Administración de Usuarios del Sistema</h2>
+    <br />
+   <h2 align="center">Administración de usuarios</h2>
 <div class="container-fluid" style="margin-top:100px">
 
     <div class="col-sm-4 " > <a href="/InsertarUsuario.aspx" class="myButton"><img src="Iconos/agregarPersona.png" alt="Los Tejos" /><br />Insertar</a> </div>

@@ -12,8 +12,8 @@
     <div  align="center">
     <div class="form-group" align="center" >
         <br />
-        <h2>Nuevo Usuario
-            <img src="" style="max-height:70px; max-width:70px">
+        <h2>Nuevo usuario
+            <img src="Iconos/addUser.png" style="max-height:60px; max-width:60px">
         </h2>
         <br />
         <asp:Label ID="LBID" ForeColor="black" runat="server" Text="ID de usuario: "></asp:Label>

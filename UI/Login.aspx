@@ -10,7 +10,7 @@
         <div id="loginbox" style="margin-top:50px"  >
             <div class="panel panel-success" style="max-width:550px">
                 <div class="panel-heading">
-                    <div class="panel-title" align="center">Inicio de Sesión | Administracion </div>
+                    <div class="panel-title" align="center">Inicio de Sesión | Administración </div>
                 </div>
                 <div style="padding-top: 30px" class="panel-body">
                     <div class="form-horizontal">

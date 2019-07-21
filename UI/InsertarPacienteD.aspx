@@ -12,8 +12,8 @@
     <div  align="center">
     <div class="form-group" align="center" >
         <br />
-        <h2>Nuevo Paciente
-            <img src="" style="max-height:70px; max-width:70px">
+        <h2>Nuevo paciente
+            <img src="Iconos/add.png" style="max-height:60px; max-width:60px">
         </h2>
         <br />
         <asp:Label ID="LBID" ForeColor="black" runat="server" Text="ID de paciente: "></asp:Label>
@@ -50,11 +50,11 @@
                                 ForeColor="Red">
                             </asp:RequiredFieldValidator> 
         <br />
-         <asp:Label ID="LBtelefono" ForeColor="black" runat="server"  Text="Telefono: "></asp:Label>
+         <asp:Label ID="LBtelefono" ForeColor="black" runat="server"  Text="Teléfono: "></asp:Label>
         <asp:TextBox ID="txtTelefono" runat="server" Width="280px" CssClass="form-control" TextMode="Number" ></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
                                 ControlToValidate="txtTelefono"
-                                ErrorMessage="El telefono es requerido."
+                                ErrorMessage="El télefono es requerido."
                                 ForeColor="Red">
                             </asp:RequiredFieldValidator>
         <br />
@@ -77,7 +77,7 @@
                             </asp:RequiredFieldValidator> 
            <br />
         <div class="form-group">
-        <asp:Label ID="lbTipoOntograma" ForeColor="black" runat="server" Text="Tipo de ontrograma: "></asp:Label>
+        <asp:Label ID="lbTipoOntograma" ForeColor="black" runat="server" Text="Tipo de odontograma: "></asp:Label>
        <asp:DropDownList ID="DDLTipoOntograma" CssClass="form-control" Width="280px" runat="server"></asp:DropDownList>
              
         </div>
