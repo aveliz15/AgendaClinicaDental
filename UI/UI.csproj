@@ -40,7 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="ServiceStack.Common">
       <HintPath>..\packages\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Common.dll</HintPath>
     </Reference>
@@ -157,6 +159,28 @@
     <Content Include="Secretaria.Master" />
     <Content Include="Login.Master" />
     <Content Include="Iconos\buscar.png" />
+    <Content Include="BDClinicaDentalDataSet.xsc">
+      <DependentUpon>BDClinicaDentalDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="BDClinicaDentalDataCitas.xsc">
+      <DependentUpon>BDClinicaDentalDataCitas.xsd</DependentUpon>
+    </Content>
+    <None Include="BDClinicaDentalDataCitas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDClinicaDentalDataCitas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BDClinicaDentalDataCitas.xss">
+      <DependentUpon>BDClinicaDentalDataCitas.xsd</DependentUpon>
+    </Content>
+    <None Include="BDClinicaDentalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDClinicaDentalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BDClinicaDentalDataSet.xss">
+      <DependentUpon>BDClinicaDentalDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -220,6 +244,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDClinicaDentalDataCitas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDClinicaDentalDataCitas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDClinicaDentalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDClinicaDentalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BuscarUsuario.aspx.cs">
       <DependentUpon>BuscarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -415,7 +449,9 @@
       <Name>DATOS_ClinicaDental</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

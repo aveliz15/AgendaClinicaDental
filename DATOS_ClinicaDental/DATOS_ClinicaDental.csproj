@@ -60,6 +60,7 @@
     <Compile Include="Modelos\Cita.cs" />
     <Compile Include="Modelos\Diagnostico.cs" />
     <Compile Include="Modelos\Diente.cs" />
+    <Compile Include="Modelos\event.cs" />
     <Compile Include="Modelos\Paciente.cs" />
     <Compile Include="Modelos\Reporte.cs" />
     <Compile Include="Modelos\Rol.cs" />
